@@ -1,0 +1,17 @@
+{
+  "name": "Cashless-Sport (Pádel) Santa Marta",
+  "short_name": "Cashless Pádel",
+  "description": "Reserva canchas, torneos y ranking del club",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#060d1c",
+  "theme_color": "#060d1c",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
