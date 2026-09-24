@@ -1,0 +1,1756 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+<title>Pulseras Evento · Control de consumo</title>
+<link rel="icon" href="data:image/webp;base64,UklGRvYFAABXRUJQVlA4IOoFAABwHACdASpAAEAAPk0ejEQioaEYCwb8KATEtgBjPMbsLyBzL7yHkzoy4lc9MIn7jt9P+yXqA/Wb1c/Qt/l/UN/rX+x6wv0AP2A9OP2Rf2y/cP2baxHyz+bfaLkiRFPjv2q/BflpyA+/LJz/Yfyq4RHkv9Q/0XGB8yX5Ae6J/quNvoAfij/o/2j3Wv6rxy/Rf/X9wT+Uf1T/Sf2X8j+R8epXIQdhwabInXkZDDsVmQoiJhrPJHh54vwiesWi49k3pP0UzMhA/EDMmU7SaunrXTRolMWLx/yZiuYxMoDwnrbsic1pE3bdDE1xFnIGkAD+/woeav0BTi4zhmjTE8bls/DHymREyTOsRNKuqF4aWb8dD48uNtK0hJJZ9eLAmsiRzoQLdxVzxvfTqh3igIaMveT3u/G42WH90pu4kv+MX2fbctLdSoP/cmyi69xVbshzvPuy/y4t35Yd+aAJBU8PWwuwA0MAqK82dGUz1L/iZeBEu/p1Dz7zS3eAr6shpzxB9/INgBV8D/xy83pGSPCtZKOToJ5Oc8vGEbv+EuSrg7TUP4rqwnkdg6BNkDCI1nVTxQbNdeGPsgAAkQVQd4DCkL5gz0kIo7cERWsrY1l3iZALB7B18Pmhymas/rqzdRjiQ5H/w73fGUsbNmTJ1+3dlLOaEOzJqcZoTLC4pHRQ7VxS9nm0Wc1arDZI6ScSzIT4hiejKd/oILcKPFOe0v+10vpEmGsAfo/TI9sHrEAaPRLQaCbSH4Z//KBoAYRe9X7Rzec89gnht3+8GPj29tpHtpy6xWtCtmiA6z3QzbSEQlVVpgTBxfa72Wqz3mvr8/aM8c/5l3zIgydtHgad8Fq5l2P/+qAvziyBsTzEI+U/6YLBv9Pa413xwaxSjr/9uM9P19ODWQMe+k8gVZ2ZZJ3JT5orM9B2Mnnlg4KAjiXlV4JQIwg4zZT+0kz1Sr70F9Gz5sb6aEDVFYd2HS+Ahfpnb4ieB7ResUJb8V02pOq3lYWQS3XusRL9+2tUWfSwBZ7N2nuMM79dW57e2kw/yeZo8hJPNOG20chtOIaQr3lEdmz4WBZuuOlk5JLpmHRPPAOstNv7z7kR98dqGzThdeoAfJRwiAxXFGzvy2HKwjSrdSBF422PyZJ50T2kKL5P0ToQl+87CzSgZm9HJV4dDfsXkuCGzls1o005XytpKRRg5AfQ+BBYkfW3B3p1gqs9YhXifMjWpEX110XYTZeVfkLW+EHNCJhnKFOeSablP2Nlwyu9PLf7DIE0DRTwz7V0NCp3Iy3gJbYG1Ox7psrPfcLR/OFh0R/6gn7LF7cYX2m90Av48957vgJNFsPfDZ9TYGFPvNF1th60N/Jd7/xi6eEXHp/XDIjHhNV8lo+yWj6T9wJjWREs6Ay42n8YEs5cy3pDAOA2PL967L5ERuOmctEKBD25Mo99VR9+/Vs75N1c3+Tb40fh6KUG4ZkjyG/8MGbXT/XaO97Sq33/md0eK65/0vm42pWSKbW9lUn/Xh26HlDfP7/QMyeeX+XaltR/+nNv3zUrQGU8TUIUCmKY9LkupXT1UoDb4I8brcCwGxKtjMJ7PU9/5k8KNoDXJ8nTbvXT5hAu9N4KdkR1aIlg+HR1E6kK8uhwV0TR/yQn3AFz9apuHY9R/CNbYV+Px8C0s/2vSdL4iMBuLBJtQB9gHYvOVwrd75T8O3WXqaFPA+B+0XUr5cP/Iek7j1mp9Ngm8F13Br763itT6JI8tzzlNEfy21UmBmz3/5jL//xzrakp7Xy/3qlxtZdb5xnjD+mh0c9qjv35KZQzegIP1L6bZhQBI/iFJvFguMdDM8oJoI7XypJ5z3ELluRtKECZullhTLb6nicD4Y8Gb2/w4d8TqlsyD3/OPIqqDxni1A3zLxeDqj0/9FLpTW8osquteuwlX2qW+rpcf9v5KYuoE5E4zH0fk77UREWwSyNf5z4Wvq5qZQNfFlLvrsOCf/DQh9maJ9GNBJOTdAwviOGxfupOaEObcLivyJXjOOrX4gAAAA==">
+<!-- PWA: manifest + íconos + service worker (mismos 5 archivos sueltos que la
+     app original: este HTML, manifest.json, sw.js, icon-192.png, icon-512.png). -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#050a1c">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Pulseras Evento">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://uslukoplmwevnbrnsibs.supabase.co">
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<style>
+/* =========================================================
+   PULSERAS EVENTO — mismo lenguaje visual "Espectro" del app
+   original (azul abismo + acentos), recortado a los componentes
+   genéricos que este dominio nuevo realmente usa.
+========================================================= */
+:root{
+  --void:#040915; --void-2:#070e24; --panel:#0b1330; --panel-2:#101b42; --panel-3:#16234f;
+  --line:#26356a; --line-soft:rgba(132,152,240,.17);
+  --ember:#ff8a2b; --coral:#ff4d4a; --rose:#ff7eb0; --iris:#7d88ff; --royal:#3b56ff; --aqua:#1fe8dc; --azure:#2b86ff;
+  --amber:#e2a04c; --gold:#ffcc4d; --slate:#3f4f84; --slate-hi:#54659f;
+  --text:#f3f6ff; --text-dim:#8f9ecb; --ok:#2ee6b8; --warn:#ffc94d; --bad:#ff5a5f;
+  --radius:12px; --shadow:0 18px 48px -22px rgba(0,0,10,.9);
+  --f-display:'Sora','Manrope',system-ui,sans-serif; --f-body:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+html,body{margin:0; padding:0; min-height:100%;}
+body{font-family:var(--f-body); color:var(--text); background:
+  radial-gradient(ellipse 70% 45% at 50% -8%, rgba(70,84,220,.22), transparent 62%),
+  radial-gradient(ellipse 45% 38% at 4% 46%, rgba(255,110,40,.09), transparent 62%),
+  radial-gradient(ellipse 45% 38% at 98% 52%, rgba(31,232,220,.08), transparent 62%),
+  linear-gradient(180deg, #050a1c, #040915 60%, #030612);
+  min-height:100vh; -webkit-font-smoothing:antialiased;}
+h1,h2,h3,.display{font-family:var(--f-display); font-weight:700; letter-spacing:-.01em;}
+.mono{font-family:var(--f-display); font-variant-numeric:tabular-nums; letter-spacing:.04em;}
+a{color:inherit;} button{font-family:inherit;}
+:focus-visible{outline:2px solid var(--iris); outline-offset:2px;}
+option{background:#0b1330; color:#f3f6ff;}
+
+#app{position:relative; min-height:100vh; display:flex; flex-direction:column;}
+.topbar{
+  display:flex; align-items:center; gap:14px; padding:12px 22px;
+  background:linear-gradient(180deg, rgba(10,18,44,.94), rgba(8,14,36,.80));
+  backdrop-filter:blur(14px); border-bottom:1px solid var(--line-soft);
+  box-shadow:0 12px 30px -24px rgba(59,86,255,.6); position:sticky; top:0; z-index:50;
+}
+.topbar .brand{display:flex; flex-direction:column; line-height:1.15;}
+.topbar .brand b{font-family:var(--f-display); font-size:15.5px; font-weight:700; color:#fff;}
+.topbar .brand span{font-size:11px; color:var(--text-dim); font-weight:500;}
+.topbar .spacer{flex:1;}
+.role-badge{font-size:12px; padding:7px 15px; border-radius:99px; background:linear-gradient(180deg, var(--slate-hi), var(--slate)); color:#fff; font-weight:700; border:1px solid rgba(255,255,255,.12); font-family:var(--f-display);}
+.btn-logout{border:1px solid #fff; background:#fff; color:#091032; padding:8px 18px; border-radius:99px; cursor:pointer; font-size:12.5px; font-weight:700; font-family:var(--f-display); transition:.18s;}
+.btn-logout:hover{box-shadow:0 0 0 4px rgba(255,255,255,.14);}
+
+main{flex:1; padding:26px 18px 60px; max-width:1040px; margin:0 auto; width:100%;}
+.hide{display:none !important;}
+
+.card{background:linear-gradient(180deg, #0f1a40, #0b1330 70%); border:1px solid var(--line-soft); border-radius:var(--radius); padding:20px; box-shadow:var(--shadow);}
+.grid-2{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+.grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+@media(max-width:900px){.grid-3{grid-template-columns:1fr 1fr;}}
+@media(max-width:640px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+
+label{display:block; font-size:12px; color:var(--text-dim); margin:0 0 6px 4px; font-family:var(--f-display); font-weight:600;}
+input,select,textarea{width:100%; background:#081029; border:1px solid var(--line); color:var(--text); padding:11px 18px; border-radius:99px; font-size:14.5px; font-family:var(--f-body); outline:none; transition:border-color .2s, box-shadow .2s;}
+textarea{border-radius:18px; padding:13px 18px;}
+input::placeholder,textarea::placeholder{color:#5b6a9a;}
+input:focus,select:focus,textarea:focus{border-color:var(--iris); box-shadow:0 0 0 3px rgba(125,136,255,.22);}
+.field{margin-bottom:14px;}
+.row{display:flex; gap:10px; flex-wrap:wrap; align-items:flex-end;}
+
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; cursor:pointer; border:1px solid rgba(255,255,255,.10); border-radius:99px; padding:12px 22px; font-family:var(--f-display); font-weight:600; font-size:13.5px; background:linear-gradient(180deg, var(--slate-hi), var(--slate)); color:#fff; transition:transform .18s, border-color .18s, box-shadow .18s;}
+.btn:hover{transform:translateY(-1px); border-color:var(--amber);}
+.btn:disabled{opacity:.45; cursor:not-allowed; transform:none;}
+.btn-primary{background:#fff; color:#091032; border-color:#fff; box-shadow:0 12px 30px -16px rgba(160,180,255,.7);}
+.btn-ghost{background:transparent; border-color:rgba(226,160,76,.72); color:#ffe4bc;}
+.btn-danger{background:linear-gradient(180deg,#ff6b60,#e13b4b); color:#fff; border-color:transparent;}
+.btn-block{width:100%;}
+.btn-sm{padding:8px 15px; font-size:12.5px;}
+.btn-lg{padding:16px 30px; font-size:16px;}
+.btn-link{background:none; border:0; color:var(--text-dim); font-size:12.5px; cursor:pointer; text-decoration:underline; text-underline-offset:3px;}
+.btn-link:hover{color:#fff;}
+
+.pill-tab{padding:9px 17px; border-radius:99px; border:1px solid var(--line-soft); background:rgba(13,22,54,.92); color:var(--text-dim); cursor:pointer; font-family:var(--f-display); font-size:12.5px; font-weight:600; white-space:nowrap; transition:.18s;}
+.pill-tab:hover{border-color:var(--amber); color:#fff;}
+.pill-tab.active{background:linear-gradient(180deg, var(--slate-hi), var(--slate)); color:#fff; border-color:rgba(255,255,255,.14);}
+.tabs{display:flex; gap:8px; overflow-x:auto; padding-bottom:4px; margin-bottom:18px;}
+.section-title{display:flex; align-items:center; gap:10px; margin:0 0 16px;}
+.section-title h2{margin:0; font-size:22px; font-weight:700; color:#fff;}
+.hint{font-size:12.5px; color:var(--text-dim); margin-top:4px; line-height:1.5;}
+
+.stat{background:linear-gradient(180deg, rgba(18,29,69,.92), rgba(11,19,48,.92)); border:1px solid var(--line-soft); border-radius:12px; padding:16px; display:flex; flex-direction:column; gap:10px; min-height:118px;}
+.stat span{font-size:13px; color:#dfe6ff; font-family:var(--f-display); font-weight:600;}
+.stat b{margin-top:auto; font-family:var(--f-display); font-size:clamp(20px,2.4vw,26px); font-weight:800; color:#fff;}
+
+table{width:100%; border-collapse:collapse; font-size:13px;}
+th,td{padding:11px 8px; text-align:left; border-bottom:1px solid var(--line-soft);}
+th{color:var(--text-dim); font-size:11.5px; font-weight:700; font-family:var(--f-display);}
+.table-wrap{overflow-x:auto;}
+.badge{padding:3px 10px; border-radius:99px; font-size:11px; font-weight:700; font-family:var(--f-display); display:inline-block;}
+.badge.ok{background:rgba(46,230,184,.14); color:var(--ok);}
+.badge.neutral{background:rgba(255,255,255,.08); color:var(--text-dim);}
+
+.toast-wrap{position:fixed; top:16px; right:16px; left:16px; z-index:999; display:flex; flex-direction:column; align-items:flex-end; gap:8px; pointer-events:none;}
+.toast{background:#0f1a40; border:1px solid var(--iris); color:var(--text); padding:12px 18px; border-radius:16px; font-size:13.5px; box-shadow:var(--shadow); max-width:340px; animation:toastin .3s cubic-bezier(.2,.9,.3,1.3);}
+.toast.err{border-color:var(--bad);}
+@keyframes toastin{from{opacity:0; transform:translateY(-10px);} to{opacity:1; transform:translateY(0);}}
+
+.hero{text-align:center; padding:40px 10px 20px;}
+.hero h1{font-size:clamp(28px,5vw,44px); line-height:1.1; margin:0 0 10px; font-weight:700; color:#fff;}
+.hero p{color:#b8c4ea; max-width:460px; margin:0 auto; font-size:15px; line-height:1.6;}
+.role-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:30px;}
+@media(max-width:820px){.role-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:480px){.role-grid{grid-template-columns:1fr;}}
+.role-card{background:linear-gradient(180deg, #0f1a40, #0b1330); border:1px solid var(--line-soft); border-radius:18px; padding:26px 18px; text-align:center; cursor:pointer; transition:.2s;}
+.role-card:hover{transform:translateY(-4px); border-color:rgba(190,205,255,.5); box-shadow:var(--shadow);}
+.role-card .ic{font-size:30px; margin-bottom:10px; display:block;}
+.role-card b{display:block; font-family:var(--f-display); font-size:16px; font-weight:700;}
+.role-card span{font-size:12px; color:var(--text-dim);}
+
+.auth-shell{max-width:400px; margin:40px auto;}
+.back{cursor:pointer; color:var(--text-dim); font-size:13px; margin-bottom:16px; display:inline-block; font-family:var(--f-display); font-weight:600;}
+.back:hover{color:#fff;}
+
+.derecho-chip{display:inline-flex; align-items:center; gap:5px; padding:4px 10px; border-radius:99px; background:rgba(125,136,255,.12); border:1px solid var(--line-soft); font-size:12.5px; margin-right:6px;}
+
+/* alerta roja de pantalla completa: consumo agotado / saldo insuficiente */
+.pantalla-resultado{position:fixed; inset:0; z-index:9999; display:flex; align-items:center; justify-content:center; text-align:center; padding:30px; cursor:pointer;}
+.pantalla-resultado.ok{background:rgba(10,120,60,.97);}
+.pantalla-resultado.error{background:rgba(120,10,14,.96);}
+.pantalla-resultado-box{max-width:420px;}
+.pantalla-resultado-box .pantalla-resultado-lottie{width:160px; height:160px; margin:0 auto 6px; display:block; border:0; background:transparent;}
+.pantalla-resultado-title{font-family:var(--f-display); font-weight:800; font-size:clamp(28px,7vw,44px); color:#fff; letter-spacing:-.01em; margin-bottom:10px;}
+.pantalla-resultado-sub{font-size:16px; color:#fff; opacity:.9;}
+tr.fila-agotada td{background:rgba(255,90,95,.14);}
+tr.fila-agotada td:first-child{border-left:3px solid var(--bad);}
+.modal-overlay{position:fixed; inset:0; z-index:9997; background:rgba(4,9,21,.85); display:flex; align-items:center; justify-content:center; padding:20px;}
+.modal-box{background:linear-gradient(180deg,#0f1a40,#0b1330); border:1px solid var(--line-soft); border-radius:16px; padding:22px; max-width:560px; width:100%; max-height:80vh; overflow:auto; box-shadow:var(--shadow);}
+.btn-nfc,.btn-qr{display:inline-flex; align-items:center; gap:8px; position:relative;}
+.nfc-icon{display:inline-block; width:26px; height:26px; flex:0 0 auto; border:0; background:transparent; pointer-events:none; touch-action:none;}
+/* Capa invisible que cubre TODO el botón y es la única que recibe el toque:
+   así el iframe de adentro (contenido de otro dominio) nunca puede
+   "comerse" el tap en el celular, pase lo que pase con pointer-events. */
+.tap-catcher{position:absolute; inset:0; z-index:5; cursor:pointer;}
+.qr-icon{display:inline-block; width:44px; height:44px; flex:0 0 auto; border:0; background:transparent; pointer-events:none; touch-action:none;}
+.qr-scan-wrap{max-width:320px; margin:14px auto; text-align:center;}
+.qr-scan-frame{position:relative; border-radius:20px; overflow:hidden; background:#000; box-shadow:var(--shadow); border:1px solid var(--line-soft);}
+.qr-scan-frame #entQrReader{width:100%; line-height:0;}
+.qr-scan-corners{
+  position:absolute; inset:16px; pointer-events:none; border-radius:6px;
+  background:
+    linear-gradient(var(--aqua),var(--aqua)) top left / 26px 4px no-repeat,
+    linear-gradient(var(--aqua),var(--aqua)) top left / 4px 26px no-repeat,
+    linear-gradient(var(--aqua),var(--aqua)) top right / 26px 4px no-repeat,
+    linear-gradient(var(--aqua),var(--aqua)) top right / 4px 26px no-repeat,
+    linear-gradient(var(--aqua),var(--aqua)) bottom left / 26px 4px no-repeat,
+    linear-gradient(var(--aqua),var(--aqua)) bottom left / 4px 26px no-repeat,
+    linear-gradient(var(--aqua),var(--aqua)) bottom right / 26px 4px no-repeat,
+    linear-gradient(var(--aqua),var(--aqua)) bottom right / 4px 26px no-repeat;
+}
+.qr-scan-hint{color:var(--text-dim); font-size:13px; margin-top:10px;}
+
+#offlineBanner{position:fixed; left:0; right:0; bottom:0; z-index:9999; background:#b45309; color:#fff; font-size:13px; padding:8px 14px; text-align:center;}
+</style>
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <div class="brand"><b>Pulseras Evento</b><span id="evtNameTop">Control de consumo</span></div>
+    <div class="spacer"></div>
+    <span id="roleBadgeWrap"></span>
+    <button id="btnLogout" class="btn-logout hide" onclick="Auth.logout()">Salir</button>
+  </header>
+  <div class="toast-wrap" id="toastWrap"></div>
+
+  <main>
+
+    <!-- ---------- LANDING ---------- -->
+    <section id="view-landing">
+      <div class="hero">
+        <h1>Pulseras del evento</h1>
+        <p>Elegí tu terminal para empezar.</p>
+      </div>
+      <div class="role-grid">
+        <div class="role-card" onclick="Router.go('login-admin')"><span class="ic">🛠️</span><b>Admin</b><span>Panel del evento</span></div>
+        <div class="role-card" onclick="OperadorLogin.abrir('entrada')"><span class="ic">🚪</span><b>Entrada</b><span>Invitación + pulsera</span></div>
+        <div class="role-card" onclick="OperadorLogin.abrir('comida')"><span class="ic">🍔</span><b>Comida</b><span>Entrega de alimentos</span></div>
+        <div class="role-card" onclick="OperadorLogin.abrir('barra')"><span class="ic">🍹</span><b>Barra</b><span>Cobrar consumo</span></div>
+      </div>
+      <p style="text-align:center;margin-top:30px;"><button class="btn-link" onclick="Router.go('registro-publico'); RegistroApp.init();">¿Sos invitado? Registrate acá para recibir tu QR</button></p>
+    </section>
+
+    <!-- ---------- REGISTRO PÚBLICO (invitado) ----------
+         Cuando se entra por el link público (#registro), esta pantalla
+         queda "por delante" de todo lo demás: no hay forma de navegar
+         desde acá hacia el landing interno (admin/entrada/comida/barra),
+         ver RegistroApp/MODO_INVITADO. -->
+    <section id="view-registro-publico" class="hide">
+      <div class="auth-shell">
+        <span class="back" id="regVolverLink" onclick="Router.go('landing')">← Volver</span>
+        <div class="card">
+          <div class="section-title"><h2 id="regEventoNombre">Evento</h2></div>
+          <p class="hint" style="margin-bottom:16px">Completa tus datos y te llega el QR de invitación por correo. Lo presentás en la entrada del evento.</p>
+          <div class="field"><label>Nombre completo</label><input id="regNombre" placeholder="Tu nombre"></div>
+          <div class="field"><label>Documento (opcional)</label><input id="regDocumento" placeholder="Cédula / DNI"></div>
+          <div class="field"><label>Correo</label><input id="regCorreo" type="email" placeholder="tucorreo@ejemplo.com"></div>
+          <div class="field"><label>Teléfono (opcional)</label><input id="regTelefono" placeholder="Teléfono"></div>
+          <button id="regBtnEnviar" class="btn btn-primary btn-block" onclick="RegistroApp.enviar()">Registrarme</button>
+        </div>
+      </div>
+    </section>
+    <section id="view-registro-ok" class="hide">
+      <div class="auth-shell" style="text-align:center">
+        <div class="card">
+          <div style="font-size:44px">📩</div>
+          <h2 style="margin:12px 0">¡Listo!</h2>
+          <p class="hint">Revisa tu correo: te enviamos un PDF con tu QR de invitación. Preséntalo en la entrada del evento.</p>
+          <button id="regOkBtnVolver" class="btn" style="margin-top:16px" onclick="RegistroApp.otraPersona()">Registrar a otra persona</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- LOGIN ADMIN ---------- -->
+    <section id="view-login-admin" class="hide">
+      <div class="auth-shell">
+        <span class="back" onclick="Router.go('landing')">← Volver</span>
+        <div class="card">
+          <div class="section-title"><h2>Admin</h2></div>
+          <div class="field"><label>Clave</label><input id="adminLoginPass" type="password" placeholder="••••" onkeydown="if(event.key==='Enter')AdminLogin.entrar()"></div>
+          <button class="btn btn-primary btn-block" onclick="AdminLogin.entrar()">Entrar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- LOGIN OPERADOR (entrada/comida/barra) ---------- -->
+    <section id="view-login-operador" class="hide">
+      <div class="auth-shell">
+        <span class="back" onclick="Router.go('landing')">← Volver</span>
+        <div class="card">
+          <div class="section-title"><h2 id="opLoginTitulo">Terminal</h2></div>
+          <div class="field"><label>Usuario</label><input id="opLoginUsuario" placeholder="Usuario"></div>
+          <div class="field"><label>Clave</label><input id="opLoginPass" type="password" placeholder="••••" onkeydown="if(event.key==='Enter')OperadorLogin.entrar()"></div>
+          <button class="btn btn-primary btn-block" onclick="OperadorLogin.entrar()">Entrar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- ADMIN ---------- -->
+    <section id="view-admin" class="hide">
+      <div class="section-title"><h2>Panel del evento</h2></div>
+      <div class="tabs">
+        <div class="pill-tab active" data-tab="a-evento" onclick="AdminApp.tab('a-evento')">Evento</div>
+        <div class="pill-tab" data-tab="a-inventario" onclick="AdminApp.tab('a-inventario')">Inventario</div>
+        <div class="pill-tab" data-tab="a-pulseras" onclick="AdminApp.tab('a-pulseras')">Pulseras</div>
+        <div class="pill-tab" data-tab="a-registros" onclick="AdminApp.tab('a-registros')">Registros</div>
+        <div class="pill-tab" data-tab="a-operadores" onclick="AdminApp.tab('a-operadores')">Operadores</div>
+      </div>
+
+      <div id="a-evento" class="admin-pane">
+        <div class="card">
+          <div class="field"><label>Nombre del evento</label><input id="evNombre"></div>
+          <div class="row">
+            <div class="field" style="flex:1"><label>Fecha</label><input id="evFecha" type="date"></div>
+            <div class="field" style="flex:1"><label>Hora</label><input id="evHora" placeholder="8:00 PM"></div>
+          </div>
+          <button class="btn btn-primary" onclick="AdminApp.guardarEvento()">Guardar</button>
+        </div>
+      </div>
+
+      <div id="a-inventario" class="admin-pane hide">
+        <div class="card">
+          <div class="section-title"><h2 style="font-size:15px">Nuevo producto</h2></div>
+          <div class="row">
+            <div class="field" style="flex:2 1 160px"><label>Nombre</label><input id="prNombre" placeholder="Cerveza"></div>
+            <div class="field" style="flex:1 1 100px"><label>Valor</label><input id="prValor" type="number" min="0" placeholder="0"></div>
+            <div class="field" style="flex:1 1 160px"><label>Derecho gratuito</label>
+              <select id="prCategoria">
+                <option value="">— Ninguno (solo barra) —</option>
+                <option value="cerveza">🍺 Cerveza</option>
+                <option value="coctel">🍸 Cóctel</option>
+                <option value="postre">🍰 Postre</option>
+              </select>
+            </div>
+            <div class="field" style="flex:1 1 100px"><label>Stock</label><input id="prStock" type="number" min="0" placeholder="0"></div>
+          </div>
+          <button class="btn btn-primary" onclick="AdminApp.crearProducto()">Agregar al inventario</button>
+        </div>
+        <div class="card" style="margin-top:16px">
+          <div class="table-wrap"><table id="tblProductos"><thead><tr><th>Producto</th><th>Derecho</th><th>Valor</th><th>Stock</th><th></th></tr></thead><tbody></tbody></table></div>
+        </div>
+      </div>
+
+      <div id="a-pulseras" class="admin-pane hide">
+        <div class="card">
+          <div class="field"><label>Importar seriales NFC (uno por línea)</label><textarea id="pulSeriales" rows="4" placeholder="04A1B2C3&#10;04A1B2C4"></textarea></div>
+          <div class="row">
+            <button class="btn btn-primary" onclick="AdminApp.importarPulseras()">Importar lista</button>
+            <button class="btn btn-ghost btn-nfc" id="pulBtnNfc"><iframe class="nfc-icon" src="https://lottie.host/embed/8dcb14d6-6f57-452f-8eb6-577b783ae479/HKRVhrjkGy.lottie" tabindex="-1"></iframe><span class="btn-nfc-label">Escanear y agregar</span><span class="tap-catcher" onclick="AdminApp.escanearPulserasNfc()"></span></button>
+          </div>
+          <div id="pulNfcContador" class="hint hide" style="margin-top:8px"></div>
+          <div class="row" style="margin-top:14px; border-top:1px solid var(--line-soft); padding-top:14px;">
+            <input type="file" id="pulExcelFile" accept=".xlsx,.xls" style="flex:1">
+            <button class="btn btn-ghost" onclick="AdminApp.importarPulserasExcel()">📄 Importar Excel</button>
+          </div>
+        </div>
+        <div class="card" style="margin-top:16px">
+          <div class="row" style="margin-bottom:12px"><input id="pulBuscar" placeholder="Buscar serial…" style="flex:1" oninput="AdminApp.buscarPulserasDeb()"></div>
+          <div class="table-wrap"><table id="tblPulseras"><thead><tr><th>Serial</th><th>Activa</th><th>Saldo</th><th>Derechos</th><th></th></tr></thead><tbody></tbody></table></div>
+        </div>
+      </div>
+
+      <div id="a-registros" class="admin-pane hide">
+        <div class="card">
+          <div class="row" style="margin-bottom:12px"><input id="regBuscar" placeholder="Buscar por nombre o correo…" style="flex:1" oninput="AdminApp.buscarRegistrosDeb()"></div>
+          <div class="table-wrap"><table id="tblRegistros"><thead><tr><th>Nombre</th><th>Correo</th><th>Código QR</th><th>Pulsera</th><th>Usado</th><th></th></tr></thead><tbody></tbody></table></div>
+        </div>
+      </div>
+
+      <div id="a-operadores" class="admin-pane hide">
+        <div class="card">
+          <div class="row">
+            <div class="field" style="flex:1"><label>Terminal</label>
+              <select id="opNuevoTipo"><option value="entrada">Entrada</option><option value="comida">Comida</option><option value="barra">Barra</option></select>
+            </div>
+            <div class="field" style="flex:1"><label>Usuario</label><input id="opNuevoUsuario"></div>
+            <div class="field" style="flex:1"><label>Clave</label><input id="opNuevoPassword"></div>
+          </div>
+          <button class="btn btn-primary" onclick="AdminApp.crearOperador()">Crear operador</button>
+        </div>
+        <div class="card" style="margin-top:16px">
+          <div class="table-wrap"><table id="tblOperadores"><thead><tr><th>Terminal</th><th>Usuario</th><th>Activo</th><th></th></tr></thead><tbody></tbody></table></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- ENTRADA ---------- -->
+    <section id="view-entrada" class="hide">
+      <div class="section-title"><h2>Entrada</h2></div>
+      <div class="card" id="entradaPaso1">
+        <label>Código de invitación (QR del correo)</label>
+        <div class="row">
+          <input id="entCodigo" style="flex:1" placeholder="EVT-XXXXXXXX" autocomplete="off">
+          <button class="btn btn-ghost btn-qr"><iframe class="qr-icon" src="https://lottie.host/embed/6377caed-dd2f-484e-a22d-569cb92a4c44/N1Jjms4Aev.lottie" tabindex="-1"></iframe><span>Escanear QR</span><span class="tap-catcher" onclick="EntradaApp.escanearQr()"></span></button>
+        </div>
+        <div style="margin-top:10px"><button class="btn btn-primary btn-block" onclick="EntradaApp.validarRegistro()">Validar invitación</button></div>
+        <p class="hint" style="text-align:center;margin-top:10px"><button class="btn-link" onclick="EntradaApp.saltarInvitacion()">Activar pulsera sin invitación (walk-in)</button></p>
+      </div>
+      <div id="entQrReaderWrap" class="qr-scan-wrap hide">
+        <div class="qr-scan-frame">
+          <div id="entQrReader"></div>
+          <div class="qr-scan-corners"></div>
+        </div>
+        <p class="qr-scan-hint">Alinea el QR dentro del marco para escanear</p>
+      </div>
+
+      <div class="card hide" id="entradaPaso2" style="margin-top:16px">
+        <div id="entInvitado" class="hint" style="margin-bottom:12px"></div>
+        <label>Serial de la pulsera NFC</label>
+        <div class="row">
+          <input id="entSerial" style="flex:1" placeholder="Acerca la pulsera o escribe el serial" autocomplete="off">
+          <button class="btn btn-ghost btn-nfc" id="entBtnNfc"><iframe class="nfc-icon" src="https://lottie.host/embed/8dcb14d6-6f57-452f-8eb6-577b783ae479/HKRVhrjkGy.lottie" tabindex="-1"></iframe><span class="btn-nfc-label">Leer NFC</span><span class="tap-catcher" onclick="EntradaApp.leerNfc()"></span></button>
+        </div>
+        <div style="margin-top:10px"><button class="btn btn-primary btn-block" onclick="EntradaApp.activarPulsera()">Activar pulsera</button></div>
+      </div>
+      <div class="card hide" id="entradaExito" style="margin-top:16px;text-align:center">
+        <div style="font-size:40px">✅</div>
+        <div id="entExitoMsg" style="margin:10px 0"></div>
+        <button class="btn" onclick="EntradaApp.reiniciar()">Siguiente invitado</button>
+      </div>
+    </section>
+
+    <!-- ---------- COMIDA ---------- -->
+    <section id="view-comida" class="hide">
+      <div class="section-title"><h2>Comida</h2></div>
+      <div class="card" id="comidaLookup">
+        <label>Serial de la pulsera</label>
+        <div class="row">
+          <input id="comSerial" style="flex:1" placeholder="Acerca la pulsera o escribe el serial" autocomplete="off">
+          <button class="btn btn-ghost btn-nfc" id="comBtnNfc"><iframe class="nfc-icon" src="https://lottie.host/embed/8dcb14d6-6f57-452f-8eb6-577b783ae479/HKRVhrjkGy.lottie" tabindex="-1"></iframe><span class="btn-nfc-label">Leer NFC</span><span class="tap-catcher" onclick="ComidaApp.leerNfc()"></span></button>
+        </div>
+        <div style="margin-top:10px"><button class="btn btn-primary btn-block" onclick="ComidaApp.consultar()">Consultar</button></div>
+      </div>
+      <div class="card hide" id="comidaPulsera" style="margin-top:16px">
+        <div id="comInfo" class="hint" style="margin-bottom:14px"></div>
+        <div class="grid-3" id="comProductos"></div>
+        <button class="btn" style="margin-top:16px" onclick="ComidaApp.reiniciar()">Otra pulsera</button>
+      </div>
+    </section>
+
+    <!-- ---------- BARRA ---------- -->
+    <section id="view-barra" class="hide">
+      <div class="section-title"><h2>Barra</h2></div>
+      <div class="card" id="barraLookup">
+        <label>Serial de la pulsera</label>
+        <div class="row">
+          <input id="barSerial" style="flex:1" placeholder="Acerca la pulsera o escribe el serial" autocomplete="off">
+          <button class="btn btn-ghost btn-nfc" id="barBtnNfc"><iframe class="nfc-icon" src="https://lottie.host/embed/8dcb14d6-6f57-452f-8eb6-577b783ae479/HKRVhrjkGy.lottie" tabindex="-1"></iframe><span class="btn-nfc-label">Leer NFC</span><span class="tap-catcher" onclick="BarraApp.leerNfc()"></span></button>
+        </div>
+        <div style="margin-top:10px"><button class="btn btn-primary btn-block" onclick="BarraApp.consultar()">Consultar</button></div>
+      </div>
+      <div class="card hide" id="barraPulsera" style="margin-top:16px">
+        <div id="barInfo" class="hint" style="margin-bottom:14px"></div>
+        <div class="grid-3" id="barProductos"></div>
+        <button class="btn" style="margin-top:16px" onclick="BarraApp.reiniciar()">Otra pulsera</button>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<div id="historialModal" class="modal-overlay hide" onclick="if(event.target===this)HistorialModal.cerrar()">
+  <div class="modal-box">
+    <div class="section-title"><h2 style="font-size:18px">Historial de <span id="histSerial" class="mono"></span></h2></div>
+    <div class="table-wrap"><table><thead><tr><th>Hora</th><th>Acción</th><th>Detalle</th><th>Quién</th></tr></thead><tbody id="histBody"></tbody></table></div>
+    <button class="btn" style="margin-top:16px" onclick="HistorialModal.cerrar()">Cerrar</button>
+  </div>
+</div>
+
+<div id="registroEditModal" class="modal-overlay hide" onclick="if(event.target===this)RegistroEditModal.cerrar()">
+  <div class="modal-box">
+    <div class="section-title"><h2 style="font-size:18px">Editar invitado</h2></div>
+    <div class="field"><label>Nombre completo</label><input id="regEditNombre"></div>
+    <div class="field"><label>Documento (opcional)</label><input id="regEditDocumento"></div>
+    <div class="field"><label>Correo</label><input id="regEditCorreo" type="email"></div>
+    <div class="field"><label>Teléfono (opcional)</label><input id="regEditTelefono"></div>
+    <div class="row">
+      <button class="btn btn-primary" onclick="RegistroEditModal.guardar()">Guardar</button>
+      <button class="btn" onclick="RegistroEditModal.cerrar()">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+<div id="pantallaResultado" class="pantalla-resultado hide" onclick="PantallaResultado.ocultar()">
+  <div class="pantalla-resultado-box">
+    <iframe id="resOkVideo" class="pantalla-resultado-lottie" src="https://lottie.host/embed/0725e2a3-6a0e-408f-9bce-cbee4d8c3831/l8AEdRox77.lottie" style="pointer-events:none;"></iframe>
+    <div class="pantalla-resultado-title" id="resTitulo"></div>
+    <div class="pantalla-resultado-sub" id="resSub"></div>
+  </div>
+</div>
+
+<script>
+/* =========================================================
+   CONFIG — proyecto Supabase nuevo (pulseras del evento).
+========================================================= */
+const SUPA_URL = 'https://uslukoplmwevnbrnsibs.supabase.co';
+const SUPA_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVzbHVrb3BsbXdldm5icm5zaWJzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTAwODc4NzMsImV4cCI6MjEwNTY2Mzg3M30.ow_Zi3oo3SdTrywNAQOW1ygpKi2CF_ceXJso_dFWboc';
+const EDGE_FUNCTIONS_URL = SUPA_URL + '/functions/v1';
+const SESSION_TOKEN_KEY = 'pulseras_session_token_v1';
+const AUTH_STORAGE_KEY = 'pulseras_auth_v1';
+
+/* =========================================================
+   POSTGREST LITE — mini motor de filtros (igual al app original),
+   usado por LocalKit para responder lecturas desde la copia local
+   cuando el terminal del venue se queda sin internet.
+========================================================= */
+const PostgrestLite = {
+  _splitTop(s){
+    const out = []; let depth = 0, cur = '';
+    for(const ch of String(s)){
+      if(ch==='(' || ch==='[') depth++;
+      if(ch===')' || ch===']') depth--;
+      if(ch===',' && depth===0){ out.push(cur); cur=''; } else cur += ch;
+    }
+    if(cur) out.push(cur);
+    return out;
+  },
+  _unquote(v){
+    v = String(v).trim();
+    return (v.length>=2 && v[0]==='"' && v[v.length-1]==='"') ? v.slice(1,-1).replace(/\\"/g,'"') : v;
+  },
+  _like(val, pat, ci){
+    const re = new RegExp('^' + pat.replace(/[.+^${}()|[\]\\?*]/g,'\\$&').replace(/%/g,'.*').replace(/_/g,'.') + '$', ci ? 'is' : 's');
+    return re.test(String(val));
+  },
+  _cmpVal(v){ const s = String(v); return /^-?\d+(\.\d+)?$/.test(s) ? Number(s) : s; },
+  _test(row, col, expr){
+    let neg = false;
+    if(expr.startsWith('not.')){ neg = true; expr = expr.slice(4); }
+    const i = expr.indexOf('.');
+    if(i < 0) return true;
+    const op = expr.slice(0, i), raw = expr.slice(i+1);
+    const val = row[col];
+    let res;
+    switch(op){
+      case 'eq':  res = val!=null && String(val)===this._unquote(raw); break;
+      case 'neq': res = val!=null && String(val)!==this._unquote(raw); break;
+      case 'gt': case 'gte': case 'lt': case 'lte': {
+        if(val==null){ res = false; break; }
+        const a = this._cmpVal(val), b = this._cmpVal(this._unquote(raw));
+        res = op==='gt' ? a>b : op==='gte' ? a>=b : op==='lt' ? a<b : a<=b;
+        break;
+      }
+      case 'like':  res = val!=null && this._like(val, this._unquote(raw), false); break;
+      case 'ilike': res = val!=null && this._like(val, this._unquote(raw), true); break;
+      case 'in': {
+        const list = this._splitTop(raw.replace(/^\(|\)$/g,'')).map(x=>this._unquote(x));
+        res = val!=null && list.includes(String(val));
+        break;
+      }
+      case 'is': {
+        const r = raw.toLowerCase();
+        res = r==='null' ? val==null : r==='true' ? val===true : r==='false' ? val===false : false;
+        break;
+      }
+      default: res = true;
+    }
+    return neg ? !res : res;
+  },
+  apply(rows, params){
+    const RESERVED = new Set(['select','order','limit','offset','or','and']);
+    let out = rows;
+    for(const [k, v] of params.entries()){
+      if(RESERVED.has(k)) continue;
+      out = out.filter(r => this._test(r, k, v));
+    }
+    if(params.has('or')){
+      const items = this._splitTop(params.get('or').replace(/^\(|\)$/g,'')).map(s => {
+        const j = s.indexOf('.'); return [s.slice(0, j), s.slice(j+1)];
+      });
+      out = out.filter(r => items.some(([c, e]) => this._test(r, c, e)));
+    }
+    const total = out.length;
+    if(params.has('order')){
+      const specs = params.get('order').split(',').map(s => { const [c, ...m] = s.split('.'); return {c, desc: m.includes('desc')}; });
+      out = [...out].sort((a, b) => {
+        for(const {c, desc} of specs){
+          const x = a[c], y = b[c];
+          if(x == y) continue;
+          if(x == null) return 1;
+          if(y == null) return -1;
+          const cmp = this._cmpVal(x) < this._cmpVal(y) ? -1 : 1;
+          return desc ? -cmp : cmp;
+        }
+        return 0;
+      });
+    }
+    const off = Number(params.get('offset') || 0);
+    const lim = params.has('limit') ? Number(params.get('limit')) : undefined;
+    out = out.slice(off, lim === undefined ? undefined : off + lim);
+    return {rows: out, total};
+  }
+};
+
+/* =========================================================
+   LOCAL KIT — modo "sin internet" del terminal del venue.
+   Solo se activa si esta página la sirve local/local_server.py (se
+   detecta con GET /api/config). Las tablas/RPC de solo lectura que
+   entiende son las de este dominio (pulseras/productos/registros/
+   operadores); el resto (las escrituras: activar pulsera, consumir
+   derecho, cobrar) se encolan aparte con OfflineKit._tryQueue y las
+   sube local/sync_daemon.py cuando vuelve la conexión.
+========================================================= */
+const LocalKit = {
+  TOKEN_KEY: 'pulseras_local_token_v1',
+  NET_TIMEOUT_MS: 5000,
+  token: null, isLocal: null, offline: false, _probeTimer: null, _snap: null, _snapTs: 0,
+  loadToken(){ try{ this.token = localStorage.getItem(this.TOKEN_KEY) || null; }catch(e){ this.token = null; } },
+  setToken(t){ this.token = t || null; try{ if(t) localStorage.setItem(this.TOKEN_KEY, t); else localStorage.removeItem(this.TOKEN_KEY); }catch(e){} },
+  async detect(){
+    if(this.isLocal !== null) return this.isLocal;
+    try{
+      const r = await fetch(location.origin + '/api/config', {cache:'no-store'});
+      const j = r.ok ? await r.json() : null;
+      this.isLocal = !!(j && typeof j === 'object' && 'device_id' in j);
+    }catch(e){ this.isLocal = false; }
+    if(this.isLocal && document.body) document.body.classList.add('modo-local');
+    return this.isLocal;
+  },
+  isNetworkError(err){
+    if(!err) return false;
+    if(err.code && String(err.code).length) return false;
+    if(err.name === 'AbortError') return true;
+    return /Failed to fetch|NetworkError|Load failed|network|abort/i.test(String(err.message || err.details || err));
+  },
+  setOffline(v){
+    if(this.offline === v) return;
+    this.offline = v;
+    let b = document.getElementById('offlineBanner');
+    if(v){
+      if(!b && document.body){ b = document.createElement('div'); b.id = 'offlineBanner'; document.body.appendChild(b); }
+      if(b) b.textContent = '📴 Sin internet — trabajando con la copia local. Lo que hagas se subirá solo cuando vuelva la conexión.';
+      if(!this._probeTimer) this._probeTimer = setInterval(()=>this.probe(), 10000);
+    }else{
+      if(b) b.remove();
+      if(this._probeTimer){ clearInterval(this._probeTimer); this._probeTimer = null; }
+      this._snap = null;
+    }
+  },
+  async probe(){
+    const ctl = new AbortController();
+    const t = setTimeout(()=>ctl.abort(), 4000);
+    try{ await fetch(SUPA_URL + '/rest/v1/', {headers:{apikey: SUPA_KEY}, signal: ctl.signal, cache:'no-store'}); clearTimeout(t); this.setOffline(false); }
+    catch(e){ clearTimeout(t); }
+  },
+  async snapshot(){
+    if(this._snap && Date.now() - this._snapTs < 30000) return this._snap;
+    try{
+      const r = await fetch(location.origin + '/api/snapshot', {cache:'no-store'});
+      if(!r.ok) return null;
+      this._snap = await r.json(); this._snapTs = Date.now();
+      return this._snap;
+    }catch(e){ return null; }
+  },
+  _res(body, status, extra){
+    return new Response(body === null || body === undefined ? null : JSON.stringify(body), {
+      status: status || 200, headers: Object.assign({'Content-Type':'application/json'}, extra || {})
+    });
+  },
+  async serve(url, method, init){
+    const u = new URL(url);
+    const rest = u.pathname.replace(/^\/rest\/v1\//, '');
+    if(rest.startsWith('rpc/')) return this.serveRpc(rest.slice(4), init);
+    if(method !== 'GET' && method !== 'HEAD') return null;
+    return this.serveTable(rest, u.searchParams, method, init);
+  },
+  async serveTable(table, params, method, init){
+    const snap = await this.snapshot();
+    if(!snap) return null;
+    const KNOWN = ['productos','pulseras','registros','operadores','eventos'];
+    let rows = KNOWN.includes(table) ? (snap[table] || []).map(r => Object.assign({}, r)) : [];
+    if(table === 'operadores') rows.forEach(r => { delete r.password_hash; });
+    const {rows: out, total} = PostgrestLite.apply(rows, params);
+    const h = new Headers((init && init.headers) || {});
+    const prefer = h.get('Prefer') || '';
+    const extra = {};
+    if(/count=/.test(prefer)) extra['Content-Range'] = (out.length ? `0-${out.length-1}` : '*') + '/' + total;
+    return this._res(method === 'HEAD' ? null : out, 200, extra);
+  },
+  async serveRpc(fn, init){
+    let p = {};
+    try{ p = JSON.parse((init && init.body) || '{}'); }catch(e){}
+    const snap = await this.snapshot();
+    if(!snap) return null;
+    let out;
+    switch(fn){
+      case 'productos_listar':
+        out = (snap.productos || []).filter(x => x.evento_id === p.p_evento_id && x.activo);
+        break;
+      case 'pulseras_snapshot':
+        out = (snap.pulseras || []).filter(x => x.evento_id === p.p_evento_id);
+        break;
+      case 'pulsera_consultar': {
+        const serial = String(p.p_serial || '').trim().toUpperCase();
+        const pu = (snap.pulseras || []).find(x => x.serial === serial) || null;
+        if(!pu) return this._res({message:'PULSERA_NO_REGISTRADA', code:'P0002'}, 404);
+        if(!pu.activa) return this._res({message:'Esta pulsera todavía no fue activada en la entrada.', code:'22023'}, 422);
+        if(pu.secreto_hash){
+          if(!p.p_secreto) return this._res({message:'Esta pulsera necesita leerse con NFC (no se puede escribir el serial a mano).', code:'42501'}, 403);
+          const hash = await sha256Hex(p.p_secreto);
+          if(hash !== pu.secreto_hash) return this._res({message:'Esta pulsera no coincide con su sello de seguridad (puede estar clonada).', code:'42501'}, 403);
+        }
+        out = pu;
+        break;
+      }
+      case 'evento_publico_actual':
+        out = (snap.eventos || [])[0] || null;
+        break;
+      default: return null;
+    }
+    return this._res(out);
+  },
+  async fetch(input, init){
+    const url = typeof input === 'string' ? input : ((input && input.url) || '');
+    if(this.isLocal !== true || !url.startsWith(SUPA_URL + '/rest/v1/')) return fetch(input, init);
+    const method = String((init && init.method) || (input && input.method) || 'GET').toUpperCase();
+    if(this.offline){
+      const r = await this.serve(url, method, init);
+      if(r) return r;
+      throw new TypeError('Failed to fetch');
+    }
+    const ctl = new AbortController();
+    const timer = setTimeout(()=>ctl.abort(), this.NET_TIMEOUT_MS);
+    const caller = init && init.signal;
+    if(caller){ if(caller.aborted) ctl.abort(); else caller.addEventListener('abort', ()=>ctl.abort(), {once:true}); }
+    try{
+      const res = await fetch(input, Object.assign({}, init, {signal: ctl.signal}));
+      clearTimeout(timer);
+      return res;
+    }catch(err){
+      clearTimeout(timer);
+      this.setOffline(true);
+      if(caller && caller.aborted) throw err;
+      const r = await this.serve(url, method, init);
+      if(r) return r;
+      throw err;
+    }
+  }
+};
+LocalKit.loadToken();
+
+const sb = supabase.createClient(SUPA_URL, SUPA_KEY, {global: {fetch: (i, o) => LocalKit.fetch(i, o)}});
+
+/* =========================================================
+   OFFLINE KIT — encola escrituras cuando local_server.py está
+   sirviendo la página y Supabase no responde (ver local/*.py, que
+   sube la cola solo cuando vuelve la conexión). genUuid() también
+   se usa siempre (haya o no servidor local) como referencia de
+   idempotencia para que un doble toque no aplique un consumo dos veces.
+========================================================= */
+const OfflineKit = {
+  TIMEOUT_MS: 4500,
+  genUuid(){
+    if(crypto && crypto.randomUUID) return crypto.randomUUID();
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c=>{
+      const r = Math.random()*16|0, v = c==='x'?r:(r&0x3|0x8); return v.toString(16);
+    });
+  },
+  async attemptWrite(kind, actor, eventoId, payload, onlineFn, opts){
+    const controller = new AbortController();
+    const timer = setTimeout(()=>controller.abort(), this.TIMEOUT_MS);
+    try{
+      const result = await onlineFn(controller.signal);
+      clearTimeout(timer);
+      return {offline:false, result};
+    }catch(err){
+      clearTimeout(timer);
+      if(opts && opts.soloRed && !LocalKit.isNetworkError(err)) throw err;
+      const queued = await this._tryQueue(kind, actor, eventoId, payload);
+      if(queued) return {offline:true, queueId:queued.id};
+      throw err;
+    }
+  },
+  async _tryQueue(kind, actor, eventoId, payload){
+    try{
+      const headers = {'Content-Type':'application/json'};
+      if(LocalKit.token) headers['X-Local-Token'] = LocalKit.token;
+      const res = await fetch(location.origin + '/api/queue', {
+        method:'POST', headers, body: JSON.stringify({type:kind, actor, evento_id:eventoId, payload})
+      });
+      if(!res.ok) return null;
+      return await res.json();
+    }catch(e){ return null; }
+  },
+  // Login del operador fijo de esta terminal. Con internet consulta
+  // Supabase; sin internet lo verifica el SERVIDOR LOCAL (POST
+  // /api/operador-login) contra el hash que operador_cache_refresher
+  // mantiene al día mientras hay conexión (ver local/local_server.py).
+  async loginOperador(tipo, usuario, pass){
+    const controller = new AbortController();
+    const timer = setTimeout(()=>controller.abort(), this.TIMEOUT_MS);
+    try{
+      const data = await callRpc('sesion_operador_password', {p_tipo:tipo, p_usuario:usuario, p_password:pass}, controller.signal);
+      clearTimeout(timer);
+      return {offline:false, data};
+    }catch(err){
+      clearTimeout(timer);
+      if(!LocalKit.isNetworkError(err)) return {offline:false, data:null};
+      try{
+        const res = await fetch(location.origin + '/api/operador-login', {
+          method:'POST', headers:{'Content-Type':'application/json'},
+          body: JSON.stringify({tipo, usuario, password: pass})
+        });
+        if(!res.ok) return {offline:true, data:null};
+        const j = await res.json();
+        LocalKit.setToken(j.local_token);
+        return {offline:true, data: j.identity ? {token:null, tipo:j.identity.tipo, usuario:j.identity.usuario, evento_id:j.identity.evento_id} : null};
+      }catch(e){ return {offline:true, data:null}; }
+    }
+  }
+};
+
+/* =========================================================
+   NFC KIT — lectura/escritura de pulseras vía Web NFC (idéntico
+   al del app original; el hardware/API no cambia por el dominio).
+========================================================= */
+const NfcKit = {
+  supported(){ return 'NDEFReader' in window; },
+  _controller: null,
+  _cancelarAnterior(){
+    if(this._controller){
+      try{ this._controller.abort(); }catch(e){}
+      this._controller = null;
+      return new Promise(r=>setTimeout(r, 250));
+    }
+    return Promise.resolve();
+  },
+  _errCancelado(){ const e = new Error('Lectura NFC cancelada'); e.nfcCancelado = true; return e; },
+  // La mayoría de pulseras NFC vienen "en blanco" (sin ningún texto grabado
+  // adentro) — solo traen el número de serie de fábrica del chip. Por eso
+  // se usa ese serial (event.serialNumber) como identidad siempre que esté
+  // disponible; el texto NDEF (si lo hay) es el secreto anticlonado que se
+  // escribió al activar la pulsera (ver entrada_activar_pulsera/leerNfc).
+  _datosDeEvento(event){
+    const record = event && event.message && event.message.records && event.message.records[0];
+    let texto = null;
+    if(record){
+      try{ texto = new TextDecoder(record.encoding || 'utf-8').decode(record.data); }catch(e){}
+    }
+    if(event && event.serialNumber) return {serial: String(event.serialNumber).toUpperCase(), secreto: texto};
+    return {serial: texto, secreto: null};
+  },
+  async leerUnaVez(onEsperando){
+    if(!this.supported()) return Promise.reject(new Error('Este dispositivo/navegador no soporta NFC (usa Chrome en Android)'));
+    await this._cancelarAnterior();
+    const controller = new AbortController();
+    this._controller = controller;
+    const reader = new NDEFReader();
+    return new Promise((resolve, reject)=>{
+      const onAbort = ()=>{ reject(this._errCancelado()); };
+      controller.signal.addEventListener('abort', onAbort, {once:true});
+      reader.addEventListener('reading', (event)=>{
+        try{
+          const datos = this._datosDeEvento(event);
+          if(!datos.serial) throw new Error('Este tag no tiene un identificador legible.');
+          // Cierra la sesión de lectura de verdad (no solo "la olvida"): si
+          // queda viva de fondo, puede chocar con una escritura inmediata
+          // sobre la misma pulsera (ver EntradaApp.leerNfc, que lee y
+          // después escribe el sello anticlonado en el mismo toque).
+          controller.signal.removeEventListener('abort', onAbort);
+          if(this._controller===controller) this._controller = null;
+          try{ controller.abort(); }catch(e){}
+          resolve(datos);
+        }catch(e){ reject(e); }
+      }, {once:true});
+      reader.addEventListener('readingerror', ()=>{
+        if(!controller.signal.aborted) toast('No se pudo leer ese tag, vuelve a acercarlo…', true);
+      });
+      reader.scan({signal: controller.signal}).then(()=>{
+        if(onEsperando) onEsperando();
+      }).catch((e)=>{
+        if(e && e.name==='NotAllowedError') e = new Error('El permiso de NFC está bloqueado para este sitio. En Chrome toca el candado junto a la dirección → Permisos → NFC → Permitir, y recarga la página.');
+        reject(e);
+      });
+    });
+  },
+  async escribir(codigo){
+    if(!this.supported()) throw new Error('Este dispositivo/navegador no soporta escritura NFC (usa Chrome en Android)');
+    await this._cancelarAnterior();
+    const controller = new AbortController();
+    this._controller = controller;
+    try{
+      const writer = new NDEFReader();
+      await writer.write({records:[{recordType:'text', data:String(codigo)}]}, {signal: controller.signal});
+    } finally { if(this._controller===controller) this._controller = null; }
+  },
+  cancelar(){ this._cancelarAnterior(); },
+  // Variante "continua": llama a onReading(id) cada vez que se acerca un
+  // tag, sin dejar de escuchar (usada por el escaneo masivo de pulseras
+  // del admin). Devuelve una función para cancelar manualmente.
+  async escanearContinuo(onReading, onEsperando){
+    if(!this.supported()){ toast('Este dispositivo/navegador no soporta NFC', true); return ()=>{}; }
+    await this._cancelarAnterior();
+    const controller = new AbortController();
+    this._controller = controller;
+    const reader = new NDEFReader();
+    reader.addEventListener('reading', (event)=>{
+      try{
+        const datos = this._datosDeEvento(event);
+        if(datos.serial) onReading(datos.serial);
+      }catch(e){}
+    });
+    reader.scan({signal: controller.signal}).then(()=>{
+      if(onEsperando) onEsperando();
+    }).catch((e)=>{ toast('No se pudo iniciar NFC: '+(e.message||e), true); });
+    return ()=>{ if(this._controller===controller) this._cancelarAnterior(); };
+  },
+  setBtnOn(btn, on, offLabel){
+    if(!btn) return;
+    const label = btn.querySelector('.btn-nfc-label') || btn;
+    if(offLabel===undefined) offLabel = btn.dataset.nfcOffLabel;
+    if(!btn.dataset.nfcOffLabel) btn.dataset.nfcOffLabel = offLabel!==undefined ? offLabel : label.textContent;
+    btn.classList.toggle('btn-danger', !!on);
+    label.textContent = on ? 'Toca para apagar' : (offLabel!==undefined ? offLabel : btn.dataset.nfcOffLabel);
+  }
+};
+
+/* =========================================================
+   UTILIDADES
+========================================================= */
+function toast(msg, err){
+  const wrap = document.getElementById('toastWrap');
+  const d = document.createElement('div');
+  d.className = 'toast' + (err ? ' err' : '');
+  d.textContent = msg;
+  wrap.appendChild(d);
+  setTimeout(()=>d.remove(), err ? 4200 : 2600);
+}
+function money(n){ return '$' + Math.round(Number(n||0)).toLocaleString('es-CO'); }
+async function sha256Hex(text){
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
+  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+function speak(text){
+  try{
+    if(!('speechSynthesis' in window)) return;
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'es-ES';
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+function escapeHtml(s){ return String(s??'').replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function catLabel(c){ return c==='cerveza'?'🍺 Cerveza':c==='coctel'?'🍸 Cóctel':c==='postre'?'🍰 Postre':(c||'—'); }
+function catLabelOperador(t){ return t==='entrada'?'🚪 Entrada':t==='comida'?'🍔 Comida':'🍹 Barra'; }
+async function callRpc(fn, params, signal){
+  let q = sb.rpc(fn, params || {});
+  if(signal) q = q.abortSignal(signal);
+  const {data, error} = await q;
+  if(error){ const e = new Error(error.message || 'Error'); throw e; }
+  return data;
+}
+// Pantalla completa verde (éxito, con check animado + voz) o roja (inválido/
+// ya usado/rechazado). Se cierra sola o al tocarla.
+const PantallaResultado = {
+  _timer: null,
+  ok(titulo, sub, ms){
+    this._render('ok', titulo, sub);
+    speak(titulo);
+    this._auto(ms || 1800);
+  },
+  error(titulo, sub, ms){
+    this._render('error', titulo, sub);
+    this._auto(ms || 2600);
+  },
+  // Alias retrocompatible con el nombre viejo (AlertaRoja.mostrar).
+  mostrar(titulo, sub){ this.error(titulo, sub); },
+  _render(tipo, titulo, sub){
+    const el = document.getElementById('pantallaResultado');
+    el.classList.remove('hide', 'ok', 'error');
+    el.classList.add(tipo);
+    document.getElementById('resTitulo').textContent = titulo;
+    document.getElementById('resSub').textContent = sub || '';
+    const frame = document.getElementById('resOkVideo');
+    if(frame){
+      frame.style.display = tipo === 'ok' ? 'block' : 'none';
+      // Reiniciar el src es la forma de "rebobinar" un iframe embebido: el
+      // reproductor de lottie.host arranca solo apenas carga.
+      if(tipo === 'ok'){ try{ frame.src = frame.src; }catch(e){} }
+    }
+  },
+  _auto(ms){
+    clearTimeout(this._timer);
+    this._timer = setTimeout(()=>this.ocultar(), ms);
+  },
+  ocultar(){
+    clearTimeout(this._timer);
+    document.getElementById('pantallaResultado').classList.add('hide');
+  },
+  cerrar(){ this.ocultar(); }
+};
+const AlertaRoja = PantallaResultado; // nombre viejo, mismo objeto
+
+// Historial de una pulsera: hora, qué pasó y qué operador lo hizo. Se abre
+// desde el panel de admin (tocando el serial o "Historial") y también desde
+// Comida/Barra (botón "Ver historial" junto a la pulsera consultada).
+function tipoMovLabel(t){
+  return {activacion:'Activación', consumo_derecho:'Entrega (derecho)', consumo_saldo:'Cobro (saldo)',
+    recarga_saldo:'Recarga', ajuste_derecho:'Ajuste de derecho'}[t] || t;
+}
+function detalleMov(m){
+  if(m.tipo==='consumo_derecho') return catLabel(m.categoria)+' — quedan '+m.derecho_resultante;
+  if(m.tipo==='consumo_saldo') return money(m.monto)+' — saldo: '+money(m.saldo_resultante);
+  if(m.tipo==='recarga_saldo') return '+'+money(m.monto)+' — saldo: '+money(m.saldo_resultante);
+  if(m.tipo==='ajuste_derecho') return catLabel(m.categoria)+' '+(m.cantidad>0?'+':'')+m.cantidad+' — queda '+m.derecho_resultante;
+  return '';
+}
+const HistorialModal = {
+  async abrir(serial){
+    document.getElementById('histSerial').textContent = serial;
+    const tb = document.getElementById('histBody');
+    tb.innerHTML = '<tr><td colspan="4">Cargando…</td></tr>';
+    document.getElementById('historialModal').classList.remove('hide');
+    try{
+      const rows = await callRpc('pulsera_historial', {p_token:SesionKit.token, p_serial:serial});
+      tb.innerHTML = '';
+      if(!rows || !rows.length){ tb.innerHTML = '<tr><td colspan="4">Sin movimientos todavía.</td></tr>'; return; }
+      rows.forEach(m=>{
+        const hora = new Date(m.created_at).toLocaleString('es-CO', {day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit'});
+        const quien = m.operador_usuario ? (catLabelOperador(m.operador_tipo)+' · '+escapeHtml(m.operador_usuario)) : 'Admin';
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td class="mono">${hora}</td><td>${tipoMovLabel(m.tipo)}</td><td>${detalleMov(m)}</td><td>${quien}</td>`;
+        tb.appendChild(tr);
+      });
+    }catch(e){ tb.innerHTML = '<tr><td colspan="4">'+escapeHtml(e.message||'No se pudo cargar')+'</td></tr>'; }
+  },
+  cerrar(){ document.getElementById('historialModal').classList.add('hide'); }
+};
+
+const RegistroEditModal = {
+  id: null,
+  abrir(r){
+    this.id = r.id;
+    document.getElementById('regEditNombre').value = r.nombre || '';
+    document.getElementById('regEditDocumento').value = r.documento || '';
+    document.getElementById('regEditCorreo').value = r.correo || '';
+    document.getElementById('regEditTelefono').value = r.telefono || '';
+    document.getElementById('registroEditModal').classList.remove('hide');
+  },
+  cerrar(){ document.getElementById('registroEditModal').classList.add('hide'); },
+  async guardar(){
+    const nombre = document.getElementById('regEditNombre').value.trim();
+    const documento = document.getElementById('regEditDocumento').value.trim();
+    const correo = document.getElementById('regEditCorreo').value.trim();
+    const telefono = document.getElementById('regEditTelefono').value.trim();
+    if(!nombre || !correo) return toast('Completa al menos nombre y correo', true);
+    try{
+      await callRpc('adm_registro_actualizar', {p_token:SesionKit.token, p_id:this.id,
+        p_campos:{nombre, documento: documento||null, correo, telefono: telefono||null}});
+      toast('Invitado actualizado');
+      this.cerrar();
+      AdminApp.cargarRegistros();
+    }catch(e){ toast(e.message, true); }
+  }
+};
+
+const _libPromises = {};
+function loadScriptOnce(src){
+  if(_libPromises[src]) return _libPromises[src];
+  _libPromises[src] = new Promise((resolve, reject)=>{
+    const s = document.createElement('script');
+    s.src = src;
+    s.onload = ()=>resolve();
+    s.onerror = ()=>{ delete _libPromises[src]; reject(new Error('No se pudo cargar '+src)); };
+    document.head.appendChild(s);
+  });
+  return _libPromises[src];
+}
+const loadHtml5QrcodeLib = ()=>loadScriptOnce('https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js');
+const loadExcelJsLib = ()=>loadScriptOnce('https://cdn.jsdelivr.net/npm/exceljs@4.4.0/dist/exceljs.min.js');
+
+/* =========================================================
+   ROUTER
+========================================================= */
+// Modo invitado: se activa al entrar por el link público (#registro).
+// En este modo la única pantalla accesible es la de registro/confirmación
+// -- no hay forma de llegar al landing interno (admin/entrada/comida/barra)
+// desde acá, ni por un link roto ni por un estado guardado viejo.
+let MODO_INVITADO = false;
+const VISTAS_INVITADO = new Set(['registro-publico', 'registro-ok']);
+
+const Router = {
+  current: 'landing',
+  go(view){
+    if(MODO_INVITADO && !VISTAS_INVITADO.has(view)) view = 'registro-publico';
+    document.querySelectorAll('main > section').forEach(s=>s.classList.add('hide'));
+    const t = document.getElementById('view-'+view);
+    if(t) t.classList.remove('hide');
+    this.current = view;
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+};
+
+/* =========================================================
+   SESIÓN Y AUTENTICACIÓN
+========================================================= */
+const SesionKit = {
+  token: null,
+  load(){ try{ this.token = localStorage.getItem(SESSION_TOKEN_KEY) || null; }catch(e){ this.token = null; } return this.token; },
+  set(t){ this.token = t || null; try{ if(t) localStorage.setItem(SESSION_TOKEN_KEY, t); else localStorage.removeItem(SESSION_TOKEN_KEY); }catch(e){} },
+  clear(){ this.set(null); }
+};
+SesionKit.load();
+
+const Auth = {
+  role: null, tipoOperador: null, eventoId: null, label: null, usuario: null,
+  logout(){
+    this.role = null; this.tipoOperador = null; this.eventoId = null; this.label = null; this.usuario = null;
+    SesionKit.clear();
+    try{ localStorage.removeItem(AUTH_STORAGE_KEY); }catch(e){}
+    document.getElementById('btnLogout').classList.add('hide');
+    document.getElementById('roleBadgeWrap').innerHTML = '';
+    Router.go('landing');
+  },
+  setRole(role, tipoOperador, eventoId, label, token, usuario){
+    this.role = role; this.tipoOperador = tipoOperador; this.eventoId = eventoId; this.label = label; this.usuario = usuario || null;
+    SesionKit.set(token);
+    document.getElementById('btnLogout').classList.remove('hide');
+    document.getElementById('roleBadgeWrap').innerHTML = `<span class="role-badge">${escapeHtml(label)}</span>`;
+    try{ localStorage.setItem(AUTH_STORAGE_KEY, JSON.stringify({role, tipoOperador, eventoId, label, usuario: this.usuario})); }catch(e){}
+  },
+  restore(){
+    let saved = null;
+    try{ saved = JSON.parse(localStorage.getItem(AUTH_STORAGE_KEY) || 'null'); }catch(e){}
+    const token = SesionKit.load();
+    if(!saved || (!token && !LocalKit.token)) return false;
+    this.role = saved.role; this.tipoOperador = saved.tipoOperador; this.eventoId = saved.eventoId; this.label = saved.label; this.usuario = saved.usuario || null;
+    document.getElementById('btnLogout').classList.remove('hide');
+    document.getElementById('roleBadgeWrap').innerHTML = `<span class="role-badge">${escapeHtml(saved.label)}</span>`;
+    if(saved.role === 'admin'){ Router.go('admin'); AdminApp.init(); return true; }
+    if(saved.role === 'operador' && saved.tipoOperador === 'entrada'){ Router.go('entrada'); EntradaApp.init(); return true; }
+    if(saved.role === 'operador' && saved.tipoOperador === 'comida'){ Router.go('comida'); ComidaApp.init(); return true; }
+    if(saved.role === 'operador' && saved.tipoOperador === 'barra'){ Router.go('barra'); BarraApp.init(); return true; }
+    return false;
+  }
+};
+
+const AdminLogin = {
+  async entrar(){
+    const pass = document.getElementById('adminLoginPass').value;
+    if(!pass) return toast('Escribe la clave', true);
+    try{
+      const r = await callRpc('sesion_admin_password', {p_password: pass});
+      Auth.setRole('admin', null, null, 'Admin · '+r.email, r.token);
+      Router.go('admin');
+      AdminApp.init();
+    }catch(e){ toast('Clave incorrecta', true); }
+  }
+};
+
+const OperadorLogin = {
+  tipo: 'entrada',
+  abrir(tipo){
+    this.tipo = tipo;
+    document.getElementById('opLoginTitulo').textContent = tipo==='entrada' ? 'Entrada' : tipo==='comida' ? 'Comida' : 'Barra';
+    document.getElementById('opLoginUsuario').value = '';
+    document.getElementById('opLoginPass').value = '';
+    Router.go('login-operador');
+  },
+  async entrar(){
+    const usuario = document.getElementById('opLoginUsuario').value.trim();
+    const pass = document.getElementById('opLoginPass').value;
+    if(!usuario || !pass) return toast('Completa usuario y clave', true);
+    const {offline, data} = await OfflineKit.loginOperador(this.tipo, usuario, pass);
+    if(!data){ toast('Usuario o clave incorrecta', true); return; }
+    const label = catLabelOperador(data.tipo) + ' · ' + data.usuario + (offline ? ' (sin conexión)' : '');
+    Auth.setRole('operador', data.tipo, data.evento_id, label, data.token, data.usuario);
+    if(data.tipo==='entrada'){ Router.go('entrada'); EntradaApp.init(); }
+    else if(data.tipo==='comida'){ Router.go('comida'); ComidaApp.init(); }
+    else { Router.go('barra'); BarraApp.init(); }
+  }
+};
+
+/* =========================================================
+   REGISTRO PÚBLICO
+========================================================= */
+const RegistroApp = {
+  evento: null,
+  async init(){
+    try{ this.evento = await callRpc('evento_publico_actual', {}); }catch(e){ this.evento = null; }
+    document.getElementById('regEventoNombre').textContent = this.evento ? this.evento.nombre : 'Evento';
+    document.getElementById('regNombre').value='';
+    document.getElementById('regDocumento').value='';
+    document.getElementById('regCorreo').value='';
+    document.getElementById('regTelefono').value='';
+  },
+  async enviar(){
+    if(!this.evento || !this.evento.id) return toast('No hay un evento activo en este momento', true);
+    const nombre = document.getElementById('regNombre').value.trim();
+    const documento = document.getElementById('regDocumento').value.trim();
+    const correo = document.getElementById('regCorreo').value.trim();
+    const telefono = document.getElementById('regTelefono').value.trim();
+    if(!nombre || !correo) return toast('Completa al menos tu nombre y correo', true);
+    const btn = document.getElementById('regBtnEnviar'); btn.disabled = true;
+    try{
+      await callRpc('registro_crear_publico', {p_evento_id:this.evento.id, p_nombre:nombre, p_documento:documento||null, p_correo:correo, p_telefono:telefono||null});
+      Router.go('registro-ok');
+    }catch(e){ toast(e.message || 'No se pudo completar la inscripción', true); }
+    finally{ btn.disabled = false; }
+  },
+  // Desde la pantalla de confirmación: siempre vuelve al formulario (nunca
+  // al landing interno), útil para anotar a varias personas seguidas desde
+  // el mismo celular.
+  otraPersona(){ Router.go('registro-publico'); this.init(); }
+};
+
+/* =========================================================
+   ADMIN
+========================================================= */
+const AdminApp = {
+  evento: null, _pulTimer: null, _regTimer: null,
+  async init(){
+    try{ this.evento = await callRpc('evento_publico_actual', {}); }catch(e){ this.evento = null; }
+    if(this.evento){
+      document.getElementById('evNombre').value = this.evento.nombre || '';
+      document.getElementById('evFecha').value = this.evento.fecha || '';
+      document.getElementById('evHora').value = this.evento.hora || '';
+      document.getElementById('evtNameTop').textContent = this.evento.nombre || 'Control de consumo';
+    }
+    this.tab('a-evento');
+  },
+  tab(name){
+    document.querySelectorAll('#view-admin .pill-tab').forEach(b=>b.classList.toggle('active', b.dataset.tab===name));
+    document.querySelectorAll('#view-admin .admin-pane').forEach(p=>p.classList.toggle('hide', p.id!==name));
+    if(name==='a-inventario') this.cargarProductos();
+    if(name==='a-pulseras') this.cargarPulseras();
+    if(name==='a-registros') this.cargarRegistros();
+    if(name==='a-operadores') this.cargarOperadores();
+  },
+  async guardarEvento(){
+    const nombre = document.getElementById('evNombre').value.trim();
+    const fecha = document.getElementById('evFecha').value || null;
+    const hora = document.getElementById('evHora').value.trim() || null;
+    if(!nombre) return toast('Escribe el nombre del evento', true);
+    try{
+      this.evento = await callRpc('adm_evento_upsert', {p_token:SesionKit.token, p_id:this.evento?this.evento.id:null, p_nombre:nombre, p_fecha:fecha, p_hora:hora});
+      document.getElementById('evtNameTop').textContent = this.evento.nombre;
+      toast('Evento guardado');
+    }catch(e){ toast(e.message, true); }
+  },
+  async cargarProductos(){
+    if(!this.evento) return;
+    let rows = [];
+    try{ rows = await callRpc('productos_listar', {p_token:SesionKit.token, p_evento_id:this.evento.id}); }catch(e){ toast(e.message, true); }
+    const tb = document.querySelector('#tblProductos tbody'); tb.innerHTML = '';
+    (rows||[]).forEach(p=>{
+      const tr = document.createElement('tr');
+      tr.innerHTML = `<td>${escapeHtml(p.nombre)}</td><td>${p.categoria?catLabel(p.categoria):'<span class="badge neutral">Barra</span>'}</td>
+        <td>${money(p.valor)}</td><td>${p.stock_actual} / ${p.stock_inicial}</td>
+        <td><button class="btn btn-sm btn-ghost" data-act="stock">Stock</button> <button class="btn btn-sm btn-danger" data-act="del">Borrar</button></td>`;
+      tr.querySelector('[data-act=stock]').onclick = ()=>this.editarStock(p);
+      tr.querySelector('[data-act=del]').onclick = ()=>this.borrarProducto(p);
+      tb.appendChild(tr);
+    });
+  },
+  async crearProducto(){
+    if(!this.evento) return;
+    const nombre = document.getElementById('prNombre').value.trim();
+    const valor = Number(document.getElementById('prValor').value||0);
+    const categoria = document.getElementById('prCategoria').value || null;
+    const stock = Number(document.getElementById('prStock').value||0);
+    if(!nombre) return toast('Escribe el nombre del producto', true);
+    try{
+      await callRpc('adm_producto_crear', {p_token:SesionKit.token, p_evento_id:this.evento.id, p_nombre:nombre, p_valor:valor, p_categoria:categoria, p_stock:stock});
+      document.getElementById('prNombre').value=''; document.getElementById('prValor').value=''; document.getElementById('prStock').value=''; document.getElementById('prCategoria').value='';
+      toast('Producto agregado');
+      this.cargarProductos();
+    }catch(e){ toast(e.message, true); }
+  },
+  async editarStock(p){
+    const v = prompt('Nuevo stock disponible para "'+p.nombre+'":', p.stock_actual);
+    if(v===null) return;
+    const n = Number(v);
+    if(!Number.isFinite(n) || n<0) return toast('Cantidad inválida', true);
+    try{ await callRpc('adm_producto_actualizar', {p_token:SesionKit.token, p_id:p.id, p_campos:{stock_actual:n}}); this.cargarProductos(); }
+    catch(e){ toast(e.message, true); }
+  },
+  async borrarProducto(p){
+    if(!confirm('¿Borrar "'+p.nombre+'" del inventario?')) return;
+    try{ await callRpc('adm_producto_borrar', {p_token:SesionKit.token, p_id:p.id}); this.cargarProductos(); }
+    catch(e){ toast(e.message, true); }
+  },
+  async importarPulseras(){
+    if(!this.evento) return;
+    const raw = document.getElementById('pulSeriales').value;
+    const seriales = raw.split(/[\n,;]+/).map(s=>s.trim()).filter(Boolean);
+    if(!seriales.length) return toast('Pega al menos un serial', true);
+    try{
+      const r = await callRpc('adm_pulseras_importar', {p_token:SesionKit.token, p_evento_id:this.evento.id, p_seriales:seriales});
+      toast('Se importaron '+r.importadas+' pulseras nuevas');
+      document.getElementById('pulSeriales').value='';
+      this.cargarPulseras();
+    }catch(e){ toast(e.message, true); }
+  },
+  // Lee un .xlsx/.xls con una columna (o varias) de seriales y los importa
+  // todos de una — cada celda con texto se toma como un serial candidato.
+  async importarPulserasExcel(){
+    const inp = document.getElementById('pulExcelFile');
+    const file = inp.files && inp.files[0];
+    if(!file) return toast('Elegí un archivo primero', true);
+    if(!this.evento) return;
+    try{
+      await loadExcelJsLib();
+      const buf = await file.arrayBuffer();
+      const wb = new ExcelJS.Workbook();
+      await wb.xlsx.load(buf);
+      const seriales = [];
+      wb.worksheets.forEach(ws=>{
+        ws.eachRow(row=>{
+          row.eachCell(cell=>{
+            const v = String(cell.value ?? '').trim();
+            if(v) seriales.push(v);
+          });
+        });
+      });
+      if(!seriales.length) return toast('No se encontraron seriales en el archivo', true);
+      const r = await callRpc('adm_pulseras_importar', {p_token:SesionKit.token, p_evento_id:this.evento.id, p_seriales:seriales});
+      toast('Se importaron '+r.importadas+' pulseras nuevas del Excel');
+      inp.value = '';
+      this.cargarPulseras();
+    }catch(e){ toast('No se pudo leer el archivo: '+(e.message||e), true); }
+  },
+  // Escaneo continuo por NFC: cada pulsera que se acerca al celular del
+  // admin se agrega a la base al toque, sin tener que tipear/pegar seriales.
+  // Tocar el botón de nuevo apaga el lector.
+  _nfcCancelarPulseras: null,
+  async escanearPulserasNfc(){
+    const btn = document.getElementById('pulBtnNfc');
+    const contadorEl = document.getElementById('pulNfcContador');
+    if(this._nfcCancelarPulseras){
+      this._nfcCancelarPulseras();
+      this._nfcCancelarPulseras = null;
+      NfcKit.setBtnOn(btn, false);
+      contadorEl.classList.add('hide');
+      return;
+    }
+    if(!NfcKit.supported()) return toast('Este dispositivo/navegador no soporta NFC (usa Chrome en Android)', true);
+    if(!this.evento) return;
+    let contador = 0;
+    const vistos = new Set();
+    contadorEl.classList.remove('hide');
+    contadorEl.textContent = 'Acerca cada pulsera… (0 agregadas)';
+    NfcKit.setBtnOn(btn, true, '📶 Escanear y agregar (NFC)');
+    this._nfcCancelarPulseras = await NfcKit.escanearContinuo(async (texto)=>{
+      const s = String(texto).trim().toUpperCase();
+      if(!s || vistos.has(s)) return;
+      vistos.add(s);
+      try{
+        const r = await callRpc('adm_pulseras_importar', {p_token:SesionKit.token, p_evento_id:this.evento.id, p_seriales:[s]});
+        if(r.importadas > 0){ contador++; toast('Agregada: '+s); this.cargarPulseras(); }
+        else toast(s+' ya estaba registrada');
+        contadorEl.textContent = 'Acerca cada pulsera… ('+contador+' agregadas)';
+      }catch(e){ toast(e.message || ('No se pudo agregar '+s), true); }
+    }, ()=>toast('Listo — acerca las pulseras una por una'));
+  },
+  buscarPulserasDeb(){ clearTimeout(this._pulTimer); this._pulTimer = setTimeout(()=>this.cargarPulseras(), 300); },
+  async cargarPulseras(){
+    if(!this.evento) return;
+    const buscar = document.getElementById('pulBuscar').value.trim() || null;
+    let rows = [];
+    try{ rows = await callRpc('adm_pulseras_listar', {p_token:SesionKit.token, p_evento_id:this.evento.id, p_buscar:buscar}); }catch(e){ toast(e.message, true); }
+    const tb = document.querySelector('#tblPulseras tbody'); tb.innerHTML='';
+    (rows||[]).forEach(pu=>{
+      const d = pu.derechos||{};
+      const chips = `🍺${d.cerveza??0} 🍸${d.coctel??0} 🍰${d.postre??0}`;
+      const agotada = (Number(d.cerveza)||0)<=0 && (Number(d.coctel)||0)<=0 && (Number(d.postre)||0)<=0 && (Number(pu.saldo)||0)<=0;
+      const tr = document.createElement('tr');
+      if(agotada) tr.classList.add('fila-agotada');
+      tr.innerHTML = `<td class="mono" style="cursor:pointer" data-act="hist">${escapeHtml(pu.serial)}</td><td>${pu.activa?'<span class="badge ok">Sí</span>':'<span class="badge neutral">No</span>'}</td>
+        <td>${money(pu.saldo)}</td><td>${chips}</td>
+        <td><button class="btn btn-sm btn-ghost" data-act="recarga">Recargar</button> <button class="btn btn-sm btn-ghost" data-act="derecho">Ampliar</button>
+        <button class="btn btn-sm ${pu.activa?'btn-danger':'btn-ghost'}" data-act="toggle">${pu.activa?'Desactivar':'Activar'}</button>
+        <button class="btn btn-sm btn-ghost" data-act="hist">Historial</button> <button class="btn btn-sm btn-danger" data-act="borrar">Borrar</button></td>`;
+      tr.querySelector('[data-act=recarga]').onclick = ()=>this.recargarSaldo(pu);
+      tr.querySelector('[data-act=derecho]').onclick = ()=>this.ampliarDerecho(pu);
+      tr.querySelector('[data-act=toggle]').onclick = ()=>this.togglePulsera(pu);
+      tr.querySelectorAll('[data-act=hist]').forEach(el=>el.onclick = ()=>HistorialModal.abrir(pu.serial));
+      tr.querySelector('[data-act=borrar]').onclick = ()=>this.borrarPulsera(pu);
+      tb.appendChild(tr);
+    });
+  },
+  async borrarPulsera(pu){
+    if(!confirm('¿Borrar la pulsera "'+pu.serial+'" y todo su historial? Esto no se puede deshacer.')) return;
+    try{ await callRpc('adm_pulsera_borrar', {p_token:SesionKit.token, p_serial:pu.serial}); toast('Pulsera borrada'); this.cargarPulseras(); }
+    catch(e){ toast(e.message, true); }
+  },
+  // Activar/desactivar a mano desde el panel (sin pasar por Entrada). Al
+  // desactivar se suelta el registro atado y se borra el sello anticlonado,
+  // para poder reactivarla limpia después (por ejemplo si se perdió la pulsera).
+  async togglePulsera(pu){
+    if(pu.activa && !confirm('¿Desactivar la pulsera "'+pu.serial+'"? Se suelta del invitado que tenía asignado y queda lista para reasignar.')) return;
+    try{
+      if(pu.activa) await callRpc('adm_pulsera_desactivar', {p_token:SesionKit.token, p_serial:pu.serial});
+      else await callRpc('adm_pulsera_activar', {p_token:SesionKit.token, p_serial:pu.serial});
+      toast(pu.activa ? 'Pulsera desactivada' : 'Pulsera activada (sin sello anticlonado; para eso usá la terminal de Entrada)');
+      this.cargarPulseras();
+    }catch(e){ toast(e.message, true); }
+  },
+  async recargarSaldo(pu){
+    const v = prompt('Monto a recargar en la pulsera '+pu.serial+':');
+    if(v===null) return;
+    const n = Number(v);
+    if(!Number.isFinite(n) || n<=0) return toast('Monto inválido', true);
+    try{ await callRpc('adm_pulsera_recargar_saldo', {p_token:SesionKit.token, p_serial:pu.serial, p_monto:n, p_metodo:'taquilla'}); toast('Saldo recargado'); this.cargarPulseras(); }
+    catch(e){ toast(e.message, true); }
+  },
+  async ampliarDerecho(pu){
+    const cat = prompt('¿Qué derecho ampliar? Escribe: cerveza, coctel o postre');
+    if(!cat) return;
+    const c = cat.trim().toLowerCase();
+    if(!['cerveza','coctel','postre'].includes(c)) return toast('Categoría inválida', true);
+    const v = prompt('¿Cuántas unidades extra? (usa negativo para quitar)', '1');
+    if(v===null) return;
+    const n = Number(v);
+    if(!Number.isFinite(n) || n===0) return toast('Cantidad inválida', true);
+    try{ await callRpc('adm_pulsera_ajustar_derecho', {p_token:SesionKit.token, p_serial:pu.serial, p_categoria:c, p_delta:n}); toast('Derechos actualizados'); this.cargarPulseras(); }
+    catch(e){ toast(e.message, true); }
+  },
+  buscarRegistrosDeb(){ clearTimeout(this._regTimer); this._regTimer = setTimeout(()=>this.cargarRegistros(), 300); },
+  async cargarRegistros(){
+    if(!this.evento) return;
+    const buscar = document.getElementById('regBuscar').value.trim() || null;
+    let rows = [];
+    try{ rows = await callRpc('adm_registros_listar', {p_token:SesionKit.token, p_evento_id:this.evento.id, p_buscar:buscar}); }catch(e){ toast(e.message, true); }
+    const tb = document.querySelector('#tblRegistros tbody'); tb.innerHTML='';
+    (rows||[]).forEach(r=>{
+      const tr = document.createElement('tr');
+      const pulseraTd = r.pulsera_serial
+        ? '<span class="mono">'+escapeHtml(r.pulsera_serial)+'</span>'
+        : '<span class="badge neutral">Sin asignar</span>';
+      tr.innerHTML = `<td>${escapeHtml(r.nombre)}</td><td>${escapeHtml(r.correo)}</td><td class="mono">${escapeHtml(r.codigo||'')}</td><td>${pulseraTd}</td><td>${r.usado?'<span class="badge ok">Sí</span>':'<span class="badge neutral">No</span>'}</td>
+        <td><button class="btn btn-sm btn-ghost" data-act="reenviar">Reenviar QR</button> <button class="btn btn-sm btn-ghost" data-act="editar">Editar</button> <button class="btn btn-sm btn-danger" data-act="borrar">Borrar</button></td>`;
+      tr.querySelector('[data-act=reenviar]').onclick = ()=>this.reenviarQr(r);
+      tr.querySelector('[data-act=editar]').onclick = ()=>RegistroEditModal.abrir(r);
+      tr.querySelector('[data-act=borrar]').onclick = ()=>this.borrarRegistro(r);
+      tb.appendChild(tr);
+    });
+  },
+  async borrarRegistro(r){
+    if(!confirm('¿Borrar el registro de "'+r.nombre+'"? Esto no se puede deshacer.')) return;
+    try{ await callRpc('adm_registro_borrar', {p_token:SesionKit.token, p_id:r.id}); toast('Registro borrado'); this.cargarRegistros(); }
+    catch(e){ toast(e.message, true); }
+  },
+  async reenviarQr(r){
+    try{
+      await fetch(EDGE_FUNCTIONS_URL + '/enviar-registro-qr', {
+        method:'POST', headers:{'Content-Type':'application/json','Authorization':'Bearer '+SUPA_KEY},
+        body: JSON.stringify({registro_id:r.id})
+      });
+      toast('Reenviado (si ya se había enviado antes, puede no volver a llegar)');
+    }catch(e){ toast('No se pudo reenviar', true); }
+  },
+  async cargarOperadores(){
+    if(!this.evento) return;
+    let rows = [];
+    try{ rows = await callRpc('adm_operador_listar', {p_token:SesionKit.token, p_evento_id:this.evento.id}); }catch(e){ toast(e.message, true); }
+    const tb = document.querySelector('#tblOperadores tbody'); tb.innerHTML='';
+    (rows||[]).forEach(o=>{
+      const tr = document.createElement('tr');
+      tr.innerHTML = `<td>${catLabelOperador(o.tipo)}</td><td>${escapeHtml(o.usuario)}</td><td>${o.activo?'<span class="badge ok">Sí</span>':'<span class="badge neutral">No</span>'}</td>
+        <td><button class="btn btn-sm btn-danger" data-act="del">Quitar</button></td>`;
+      tr.querySelector('[data-act=del]').onclick = ()=>this.quitarOperador(o);
+      tb.appendChild(tr);
+    });
+  },
+  async crearOperador(){
+    if(!this.evento) return;
+    const tipo = document.getElementById('opNuevoTipo').value;
+    const usuario = document.getElementById('opNuevoUsuario').value.trim();
+    const password = document.getElementById('opNuevoPassword').value;
+    if(!usuario || !password) return toast('Completa usuario y clave', true);
+    try{
+      await callRpc('adm_operador_crear', {p_token:SesionKit.token, p_evento_id:this.evento.id, p_tipo:tipo, p_usuario:usuario, p_password:password});
+      document.getElementById('opNuevoUsuario').value=''; document.getElementById('opNuevoPassword').value='';
+      toast('Operador creado');
+      this.cargarOperadores();
+    }catch(e){ toast(e.message, true); }
+  },
+  async quitarOperador(o){
+    if(!confirm('¿Quitar al operador "'+o.usuario+'"?')) return;
+    try{ await callRpc('adm_operador_quitar', {p_token:SesionKit.token, p_id:o.id}); this.cargarOperadores(); }
+    catch(e){ toast(e.message, true); }
+  }
+};
+
+/* =========================================================
+   ENTRADA — valida la invitación (QR del correo) y activa la pulsera.
+========================================================= */
+const EntradaApp = {
+  registro: null,
+  init(){ this.reiniciar(); },
+  reiniciar(){
+    this.registro = null;
+    document.getElementById('entCodigo').value='';
+    document.getElementById('entSerial').value='';
+    document.getElementById('entradaPaso1').classList.remove('hide');
+    document.getElementById('entradaPaso2').classList.add('hide');
+    document.getElementById('entradaExito').classList.add('hide');
+    document.getElementById('entQrReaderWrap').classList.add('hide');
+  },
+  saltarInvitacion(){
+    this.registro = null;
+    document.getElementById('entInvitado').textContent = 'Activación sin invitación (walk-in)';
+    document.getElementById('entradaPaso1').classList.add('hide');
+    document.getElementById('entradaPaso2').classList.remove('hide');
+  },
+  async validarRegistro(){
+    const codigo = document.getElementById('entCodigo').value.trim().toUpperCase();
+    if(!codigo) return toast('Escribe o escanea el código', true);
+    try{
+      const {offline, result} = await OfflineKit.attemptWrite(
+        'entrada_validar_offline', Auth.usuario||'', Auth.eventoId, {codigo},
+        (signal)=>callRpc('entrada_validar_registro', {p_token:SesionKit.token, p_codigo:codigo}, signal),
+        {soloRed:true}
+      );
+      if(offline){
+        this.registro = {id:null};
+        document.getElementById('entInvitado').innerHTML = '📴 Código guardado sin internet — se valida solo al reconectar.';
+      }else{
+        this.registro = result;
+        document.getElementById('entInvitado').innerHTML = '✅ Invitación válida: <b>'+escapeHtml(result.nombre)+'</b>';
+        PantallaResultado.ok('QR VÁLIDO', result.nombre || '');
+      }
+      document.getElementById('entradaPaso1').classList.add('hide');
+      document.getElementById('entradaPaso2').classList.remove('hide');
+      // Nota: el lector NFC ya NO se arranca solo acá. En varios Android,
+      // iniciar el escaneo sin un toque directo del usuario en ese momento
+      // no arma el lector a nivel del sistema operativo (el JS cree que
+      // está escuchando, pero nunca detecta nada) -- hay que tocar
+      // "Leer NFC" a propósito, igual que en Comida/Barra.
+    }catch(e){
+      PantallaResultado.error('QR NO VÁLIDO', e.message || 'Código no válido');
+    }
+  },
+  async escanearQr(){
+    await loadHtml5QrcodeLib();
+    const box = document.getElementById('entQrReaderWrap');
+    const inner = document.getElementById('entQrReader');
+    box.classList.remove('hide'); inner.innerHTML = '';
+    const reader = new Html5Qrcode('entQrReader');
+    try{
+      await reader.start({facingMode:'environment'}, {fps:10, qrbox:220}, (text)=>{
+        let codigo = text;
+        try{ const j = JSON.parse(text); if(j && j.codigo) codigo = j.codigo; }catch(e){}
+        document.getElementById('entCodigo').value = codigo;
+        reader.stop().then(()=>reader.clear()).catch(()=>{});
+        box.classList.add('hide');
+        // Apenas la cámara lee el QR, se valida solo: enseguida dice si es
+        // válido, si ya fue usado, o si no existe -- sin tocar otro botón.
+        this.validarRegistro();
+      });
+    }catch(e){ toast('No se pudo abrir la cámara: '+e.message, true); box.classList.add('hide'); }
+  },
+  async leerNfc(){
+    const btn = document.getElementById('entBtnNfc');
+    NfcKit.setBtnOn(btn, true);
+    try{
+      const {serial} = await NfcKit.leerUnaVez(()=>toast('Acerca la pulsera…'));
+      document.getElementById('entSerial').value = serial;
+      NfcKit.setBtnOn(btn, false);
+      // Sello anticlonado: mientras la pulsera sigue en el campo NFC, se le
+      // escribe un secreto nuevo — de ahí en más, comida/barra van a pedir
+      // ese mismo secreto además del serial (ver pulsera_consultar). Si la
+      // escritura falla, se activa igual pero sin sello (mejor eso que
+      // trabar la fila de entrada).
+      let secreto = null;
+      try{ secreto = OfflineKit.genUuid().replace(/-/g, ''); await NfcKit.escribir(secreto); }
+      catch(e){ secreto = null; }
+      this.activarPulsera(secreto);
+    }catch(e){
+      NfcKit.setBtnOn(btn, false);
+      if(!e.nfcCancelado) toast(e.message||'No se pudo leer el NFC', true);
+    }
+  },
+  async activarPulsera(secreto){
+    const serial = document.getElementById('entSerial').value.trim().toUpperCase();
+    if(!serial) return toast('Falta el serial de la pulsera', true);
+    const registroId = this.registro && this.registro.id ? this.registro.id : null;
+    try{
+      const {offline} = await OfflineKit.attemptWrite(
+        'entrada_activar_offline', Auth.usuario||'', Auth.eventoId, {serial, registro_id:registroId, secreto:secreto||null},
+        (signal)=>callRpc('entrada_activar_pulsera', {p_token:SesionKit.token, p_serial:serial, p_registro_id:registroId, p_secreto:secreto||null}, signal),
+        {soloRed:true}
+      );
+      document.getElementById('entradaPaso2').classList.add('hide');
+      document.getElementById('entExitoMsg').innerHTML = offline
+        ? 'Pulsera <b>'+escapeHtml(serial)+'</b> guardada para activar cuando vuelva la conexión.'
+        : 'Pulsera <b>'+escapeHtml(serial)+'</b> activada'+(secreto?' y sellada 🔒':'')+'.<br>Derechos: 3 cervezas, 1 cóctel, 1 postre.';
+      document.getElementById('entradaExito').classList.remove('hide');
+      if(!offline) PantallaResultado.ok('PULSERA ACTIVADA', serial);
+    }catch(e){
+      const titulos = {
+        PULSERA_NO_REGISTRADA: ['PULSERA NO REGISTRADA', 'Esta pulsera no está en la base de datos'],
+        PULSERA_YA_ASIGNADA: ['PULSERA YA ASIGNADA', 'Esta pulsera ya es de otro invitado'],
+        REGISTRO_YA_ASIGNADO: ['INVITACIÓN YA USADA', 'Este QR ya activó otra pulsera'],
+      };
+      const [titulo, sub] = titulos[e.message] || ['NO SE PUDO ACTIVAR', e.message||''];
+      PantallaResultado.error(titulo, sub);
+    }
+  }
+};
+
+/* =========================================================
+   COMIDA — consumo de derechos gratuitos (cerveza/cóctel/postre).
+========================================================= */
+const ComidaApp = {
+  pulsera: null, productos: [],
+  async init(){
+    try{ this.productos = await callRpc('productos_listar', {p_token:SesionKit.token, p_evento_id:Auth.eventoId}); }catch(e){ this.productos = []; }
+    this.reiniciar();
+  },
+  reiniciar(){
+    this.pulsera = null;
+    document.getElementById('comSerial').value='';
+    document.getElementById('comidaLookup').classList.remove('hide');
+    document.getElementById('comidaPulsera').classList.add('hide');
+  },
+  async leerNfc(){
+    const btn = document.getElementById('comBtnNfc');
+    NfcKit.setBtnOn(btn, true);
+    try{
+      const {serial, secreto} = await NfcKit.leerUnaVez(()=>toast('Acerca la pulsera…'));
+      document.getElementById('comSerial').value = serial;
+      NfcKit.setBtnOn(btn, false);
+      this.consultar(secreto);
+    }catch(e){ NfcKit.setBtnOn(btn, false); if(!e.nfcCancelado) toast(e.message||'No se pudo leer el NFC', true); }
+  },
+  async consultar(secreto){
+    const serial = document.getElementById('comSerial').value.trim();
+    if(!serial) return toast('Falta el serial', true);
+    try{
+      this.pulsera = await callRpc('pulsera_consultar', {p_token:SesionKit.token, p_serial:serial, p_secreto:secreto||null});
+      this.renderPulsera();
+    }catch(e){
+      PantallaResultado.error(
+        e.message==='PULSERA_NO_REGISTRADA' ? 'PULSERA NO REGISTRADA' : 'NO VÁLIDO',
+        e.message==='PULSERA_NO_REGISTRADA' ? 'Esta pulsera no está en la base de datos' : (e.message||'No se pudo consultar')
+      );
+    }
+  },
+  renderPulsera(){
+    const pu = this.pulsera; const d = pu.derechos||{};
+    document.getElementById('comInfo').innerHTML = 'Pulsera <b>'+escapeHtml(pu.serial)+'</b> — Saldo: '+money(pu.saldo)+' <button class="btn btn-sm btn-ghost" onclick="HistorialModal.abrir(\''+pu.serial+'\')">Ver historial</button>';
+    const wrap = document.getElementById('comProductos'); wrap.innerHTML='';
+    this.productos.filter(p=>p.categoria).forEach(p=>{
+      const restante = d[p.categoria] ?? 0;
+      const div = document.createElement('div'); div.className='stat';
+      div.innerHTML = `<span>${catLabel(p.categoria)} · ${escapeHtml(p.nombre)}</span><b>${restante} disp.</b>
+        <button class="btn btn-primary btn-block" ${restante<=0?'disabled':''}>Entregar</button>`;
+      div.querySelector('button').onclick = ()=>this.entregar(p);
+      wrap.appendChild(div);
+    });
+    document.getElementById('comidaLookup').classList.add('hide');
+    document.getElementById('comidaPulsera').classList.remove('hide');
+  },
+  async entregar(p){
+    try{
+      const {offline, result} = await OfflineKit.attemptWrite(
+        'comida_consumo_offline', Auth.usuario||'', Auth.eventoId, {serial:this.pulsera.serial, producto_id:p.id},
+        (signal)=>callRpc('comida_consumir', {p_token:SesionKit.token, p_serial:this.pulsera.serial, p_producto_id:p.id, p_referencia:OfflineKit.genUuid()}, signal),
+        {soloRed:true}
+      );
+      if(offline){
+        const actual = (this.pulsera.derechos && this.pulsera.derechos[p.categoria]) || 0;
+        if(actual <= 0){ PantallaResultado.error('CONSUMO COMPLETO', 'Debe recargar en taquilla'); return; }
+        this.pulsera.derechos = Object.assign({}, this.pulsera.derechos, {[p.categoria]: actual - 1});
+        toast('Entregado (guardado sin internet): '+p.nombre);
+      }else{
+        this.pulsera.derechos = Object.assign({}, this.pulsera.derechos, {[p.categoria]: result.derecho_resultante});
+        PantallaResultado.ok('COBRO VÁLIDO', p.nombre);
+      }
+      this.renderPulsera();
+    }catch(e){
+      if(e.message==='CONSUMO_COMPLETO'){ PantallaResultado.error('CONSUMO COMPLETO', 'Debe recargar en taquilla'); }
+      else{ PantallaResultado.error('NO VÁLIDO', e.message||'No se pudo entregar'); }
+    }
+  }
+};
+
+/* =========================================================
+   BARRA — cobra contra el saldo de la pulsera.
+========================================================= */
+const BarraApp = {
+  pulsera: null, productos: [],
+  async init(){
+    try{ this.productos = await callRpc('productos_listar', {p_token:SesionKit.token, p_evento_id:Auth.eventoId}); }catch(e){ this.productos = []; }
+    this.reiniciar();
+  },
+  reiniciar(){
+    this.pulsera = null;
+    document.getElementById('barSerial').value='';
+    document.getElementById('barraLookup').classList.remove('hide');
+    document.getElementById('barraPulsera').classList.add('hide');
+  },
+  async leerNfc(){
+    const btn = document.getElementById('barBtnNfc');
+    NfcKit.setBtnOn(btn, true);
+    try{
+      const {serial, secreto} = await NfcKit.leerUnaVez(()=>toast('Acerca la pulsera…'));
+      document.getElementById('barSerial').value = serial;
+      NfcKit.setBtnOn(btn, false);
+      this.consultar(secreto);
+    }catch(e){ NfcKit.setBtnOn(btn, false); if(!e.nfcCancelado) toast(e.message||'No se pudo leer el NFC', true); }
+  },
+  async consultar(secreto){
+    const serial = document.getElementById('barSerial').value.trim();
+    if(!serial) return toast('Falta el serial', true);
+    try{
+      this.pulsera = await callRpc('pulsera_consultar', {p_token:SesionKit.token, p_serial:serial, p_secreto:secreto||null});
+      this.renderPulsera();
+    }catch(e){
+      PantallaResultado.error(
+        e.message==='PULSERA_NO_REGISTRADA' ? 'PULSERA NO REGISTRADA' : 'NO VÁLIDO',
+        e.message==='PULSERA_NO_REGISTRADA' ? 'Esta pulsera no está en la base de datos' : (e.message||'No se pudo consultar')
+      );
+    }
+  },
+  renderPulsera(){
+    const pu = this.pulsera;
+    document.getElementById('barInfo').innerHTML = 'Pulsera <b>'+escapeHtml(pu.serial)+'</b> — Saldo: <b>'+money(pu.saldo)+'</b> <button class="btn btn-sm btn-ghost" onclick="HistorialModal.abrir(\''+pu.serial+'\')">Ver historial</button>';
+    const wrap = document.getElementById('barProductos'); wrap.innerHTML='';
+    this.productos.filter(p=>p.stock_actual>0).forEach(p=>{
+      const div = document.createElement('div'); div.className='stat';
+      div.innerHTML = `<span>${escapeHtml(p.nombre)}</span><b>${money(p.valor)}</b>
+        <button class="btn btn-primary btn-block" ${pu.saldo<p.valor?'disabled':''}>Cobrar</button>`;
+      div.querySelector('button').onclick = ()=>this.cobrar(p);
+      wrap.appendChild(div);
+    });
+    document.getElementById('barraLookup').classList.add('hide');
+    document.getElementById('barraPulsera').classList.remove('hide');
+  },
+  async cobrar(p){
+    try{
+      const {offline, result} = await OfflineKit.attemptWrite(
+        'barra_cobro_offline', Auth.usuario||'', Auth.eventoId, {serial:this.pulsera.serial, producto_id:p.id, cantidad:1},
+        (signal)=>callRpc('barra_cobrar', {p_token:SesionKit.token, p_serial:this.pulsera.serial, p_producto_id:p.id, p_cantidad:1, p_referencia:OfflineKit.genUuid()}, signal),
+        {soloRed:true}
+      );
+      if(offline){
+        if(this.pulsera.saldo < p.valor){ PantallaResultado.error('SALDO INSUFICIENTE', 'Debe recargar en taquilla'); return; }
+        this.pulsera.saldo -= p.valor;
+        toast('Cobrado (guardado sin internet): '+p.nombre);
+      }else{
+        this.pulsera.saldo = result.saldo_resultante;
+        PantallaResultado.ok('COBRO VÁLIDO', p.nombre+' · '+money(p.valor));
+      }
+      this.renderPulsera();
+    }catch(e){
+      if(e.message==='SALDO_INSUFICIENTE'){ PantallaResultado.error('SALDO INSUFICIENTE', 'Debe recargar en taquilla'); }
+      else{ PantallaResultado.error('NO VÁLIDO', e.message||'No se pudo cobrar'); }
+    }
+  }
+};
+
+/* =========================================================
+   ARRANQUE
+========================================================= */
+LocalKit.detect();
+(function boot(){
+  if(location.hash === '#registro'){
+    // Link público del formulario: queda aislado, sin ningún rastro de
+    // las interfaces internas (admin/entrada/comida/barra).
+    MODO_INVITADO = true;
+    document.body.classList.add('modo-invitado');
+    const volver = document.getElementById('regVolverLink');
+    if(volver) volver.remove();
+    Router.go('registro-publico');
+    RegistroApp.init();
+    return;
+  }
+  const restaurada = Auth.restore();
+  if(restaurada) return;
+  // Accesos directos por link, para dejar cada terminal físico apuntando
+  // derecho a su login (sin tener que tocar la pantalla de inicio cada vez).
+  const DIRECTOS = {'#admin':'admin', '#entrada':'entrada', '#comida':'comida', '#barra':'barra'};
+  if(DIRECTOS[location.hash]){
+    const destino = DIRECTOS[location.hash];
+    if(destino === 'admin') Router.go('login-admin');
+    else OperadorLogin.abrir(destino);
+    return;
+  }
+  Router.go('landing');
+})();
+
+// PWA: registra el service worker para que "Agregar a pantalla de inicio" /
+// "Instalar app" instale la app de verdad (requiere HTTPS o localhost; el
+// servidor local del venue sirve por HTTP plano y ahí no se registra).
+if('serviceWorker' in navigator){
+  window.addEventListener('load', ()=>{
+    navigator.serviceWorker.register('sw.js').catch(()=>{});
+  });
+}
+</script>
+</body>
+</html>
